@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="bootstrap/js/bootstrap.min.js" defer></script>
+    <!--<script src="./callme/js/jquery.js"></script>-->
+    <script src="./callme/js/callme.min.js" defer></script>
+    
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/modal.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top-header">
+            <p class="header-text header-text--min">Мы лучшее свадебное агентство, для организации Вашей свадьбы</p>
+        </div>
+        <div class="main-header">
+            <div class="logo">
+                <img src="./images/logo-black.png" alt="">
+            </div>
+            <nav>
+                <ul class="menu header-menu">
+                    <li><a href="#about" class="header-text">О нас</a></li>
+                    <li><a href="#gains" class="header-text">Преимущества</a></li>
+                    <li><a href="#portfolio" class="header-text">Портфолио</a></li>
+                    <li><a href="#services" class="header-text">Услуги</a></li>
+                    <li><a href="#works" class="header-text">Как мы работаем</a></li>
+                    <li><a href="#contacts" class="header-text">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <div class="phone-number"> <a href="tel:8-926-454-63-01">8 926 454 63 01</a></div>
+                <div class="callback" data-callme-config>Заказать звонок</div>
+            </div>
+        </div>
+    </header>
+    <header class="mobile-header">
+        <div class="burger" data-toggle="modal" data-target="#modalMenu">
+            <img src="./images/burger.png" alt="">
+        </div>
+        <div class="logo">
+            <img src="./images/logo-black.png" alt="">
+        </div>
+        <div class="phone">
+            <a href="tel:8-926-454-63-01">
+                <img src="./images/phone.png" alt="">
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <header class="header-main">
+            <div class="background-mobile"><img src="./images/photo-1-mob.png" alt=""></div>
+            <div class="background">
+                <img src="./images/photo-1.png" alt="">
+            </div>
+            <div class="content">
+            <h1 class="h1">Организация свадеб 
+                с бюджетом от<br> 
+                250 000 рублей</h1>
+            <p class="text header-main-text">
+                Команда агентства - не свадебные феи, 
+                а профессиональные менеджеры в сфере 
+                управления проектом
+            </p>
+            <div class="button header-button" data-callme-config>Заказать консультацию</div>
+            </div>
+        </header>
+        <section id="about" class="about">
+            <h2>О нас</h2>
+            <div class="container">
+                <div class="text">
+                    На страницах сайта мы знакомимся, и первое, что важно знать невесте при выборе организатора - совпадает ли наш взгляд на подготовку свадьбы?<br><br>
+                    Часто организатором становится "девочка-розовая фея", вчера была невестой, организовала свадьбу сама, набила шишки, теперь работает организатором свадеб.<br><br>
+                    <div class="splCont">
+                        Наша команда в корне не согласна с этой позицией, мы считаем, что основной навык, которым должен обладать свадебный организатор - умение управлять проектами. Это не о том как ванильно разложить салфетки, сделать красивую фотозону и рассадить гостей.<br><br>
+                        Это о том, как правильно спланировать проект, разделить его на подзадачи, определить KPI и дедлайн по каждому процессу. Как выбрать и организовать людей, чтобы каждый понимал задачу и был замотивирован выполнить работу на "отлично".<br>
+                        Все специалисты агентства имеют профильное образование по специальности "Управление проектами", проходят аттестации и повышают свои навыки.<br><br>
+                        Вам близко?<br>
+                        Тогда рада знакомству!
+                    </div>
+                    <p class="splLink">Читать подробнее</p>
+                </div>
+                <div class="about-img">
+                    <div class="frame"></div>
+                    <img src="./images/photo-2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="gains" class="gains">
+            <h2>Преимущества</h2>
+            <div class="container owl-carousel">
+                <div class="gain">
+                    <div class="gain-img"><img src="./images/gain-1.png" alt=""></div>
+                    <div class="gain-header">11</div>
+                    <p class="text">
+                        Команда BDSMerried 11 лет занимается проведением торжеств
+                    </p>
+                </div>
+                <div class="gain">
+                    <div class="gain-img"><img src="./images/gain-2.png" alt=""></div>
+                    <div class="gain-header">100%</div>
+                    <p class="text">
+                        100% наших клиентов, рекомендуют нас своим друзьям
+                    </p>
+                </div>
+                <div class="gain">
+                    <div class="gain-img"><img src="./images/gain-3.png" alt=""></div>
+                    <div class="gain-header">300</div>
+                    <p class="text">
+                        Наша команда провела более 300 свадебных торжеств
+                    </p>
+                </div>
+                <div class="gain">
+                    <div class="gain-img"><img src="./images/gain-4.png" alt=""></div>
+                    <!--<div class="gain-header"><img src="./images/infinity.png" alt=""></div>-->
+                    <div class="gain-header">500</div>
+                    <p class="text">
+                        Неограниченое количество творческих идей для вашей свадьбы
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2>Портфолио</h2>
+            <div class="portfolio-imgs">
+                <div class="portfolio-img">
+                    <div class="overlay">
+                        <header class="overlay-header">
+                            <div class="count">1/22</div>
+                            <div class="logo-img"><img src="./images/logo-white.png" alt=""></div>
+                        </header>
+                        <div class="ancors">
+                            <a href="">смотреть фотографии</a>
+                            <a href="">смотреть видео</a>
+                        </div>
+                        <footer class="overlay-footer">
+                            <p>Свадьба Сергея и Оксаны на берегу реки</p>
+                        </footer>
+                    </div>
+                    <img src="./images/photo-3.png" alt="">
+                </div>
+                <div class="portfolio-img">
+                    <div class="overlay">
+                        <header class="overlay-header">
+                            <div class="count">1/22</div>
+                            <div class="logo-img"><img src="./images/logo-white.png" alt=""></div>
+                        </header>
+                        <div class="ancors">
+                            <a href="">смотреть фотографии</a>
+                            <a href="">смотреть видео</a>
+                        </div>
+                        <footer class="overlay-footer">
+                            <p>Свадьба Сергея и Оксаны на берегу реки</p>
+                        </footer>
+                    </div>
+                    <img src="./images/photo-4.png" alt=""></div>
+                <div class="portfolio-img">
+                    <div class="overlay">
+                        <header class="overlay-header">
+                            <div class="count">1/22</div>
+                            <div class="logo-img"><img src="./images/logo-white.png" alt=""></div>
+                        </header>
+                        <div class="ancors">
+                            <a href="">смотреть фотографии</a>
+                            <a href="">смотреть видео</a>
+                        </div>
+                        <footer class="overlay-footer">
+                            <p>Свадьба Сергея и Оксаны на берегу реки</p>
+                        </footer>
+                    </div>
+                    <img src="./images/photo-5.png" alt=""></div>
+                <div class="portfolio-img">
+                    <div class="overlay">
+                        <header class="overlay-header">
+                            <div class="count">1/22</div>
+                            <div class="logo-img"><img src="./images/logo-white.png" alt=""></div>
+                        </header>
+                        <div class="ancors">
+                            <a href="">смотреть фотографии</a>
+                            <a href="">смотреть видео</a>
+                        </div>
+                        <footer class="overlay-footer">
+                            <p>Свадьба Сергея и Оксаны на берегу реки</p>
+                        </footer>
+                    </div>
+                    <img src="./images/photo-6.png" alt=""></div>
+                <div class="portfolio-img">
+                    <div class="overlay">
+                        <header class="overlay-header">
+                            <div class="count">1/22</div>
+                            <div class="logo-img"><img src="./images/logo-white.png" alt=""></div>
+                        </header>
+                        <div class="ancors">
+                            <a href="">смотреть фотографии</a>
+                            <a href="">смотреть видео</a>
+                        </div>
+                        <footer class="overlay-footer">
+                            <p>Свадьба Сергея и Оксаны на берегу реки</p>
+                        </footer>
+                    </div>
+                    <img src="./images/photo-7.png" alt=""></div>
+                <div class="portfolio-img">
+                    <div class="overlay">
+                        <header class="overlay-header">
+                            <div class="count">1/22</div>
+                            <div class="logo-img"><img src="./images/logo-white.png" alt=""></div>
+                        </header>
+                        <div class="ancors">
+                            <a href="">смотреть фотографии</a>
+                            <a href="">смотреть видео</a>
+                        </div>
+                        <footer class="overlay-footer">
+                            <p>Свадьба Сергея и Оксаны на берегу реки</p>
+                        </footer>
+                    </div>
+                    <img src="./images/photo-8.png" alt=""></div>
+            </div>
+            <div class="button seeAll">Смотреть все</div>
+        </section>
+        <section id="works" class="how-we-work">
+            <h2>Как мы работаем</h2>
+            <p class="text text-work">Представьте свадьбу мечты. У нас есть для этого всё.</p>
+            <div class="decor"><img src="./images/decor.png" alt=""></div>
+            <div class="container owl-carousel">
+                <div class="top">
+                    <div class="img-block img-block--mobile">
+                        <img src="./images/work-1.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Планируем</h2>
+                        <p class="text">
+                            Заключаем официальный договор с приложением, 
+                            где прописан график подготовки свадьбы, 
+                            что и к какому сроку будет сделано
+                        </p>
+                        <p class="text--min">
+                            Подписываем смету, которая не меняется со временем.
+                            Согласовываем график встреч со всеми исполнителями.
+                            Всю работу на этом этапе контролирует ваш личный 
+                            менеджер, который на связи 24/7.
+                        </p>
+                    </div>
+                    <div class="img-block img-block--desc">
+                        <img src="./images/work-1.png" alt="">
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="img-block"><img src="./images/work-2.png" alt=""></div>
+                    <div>
+                        <h2>Организуем</h2>
+                        <p class="text">
+                            Подберем ресторан, ведущего, фото 
+                            и ведеооператоров и всех артистов           
+                        </p>
+                        <p class="text--min">
+                            Всю работу на этом этапе выполняет ваш 
+                            личный менеджер, мы предлагаем варианты 
+                            пока вы не влюбитесь в ресторан, 
+                            ведущего и тд
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="img-block img-block--mobile"><img src="./images/work-3.png" alt=""></div>
+                    <div>
+                        <h2>Проводим</h2>
+                        <p class="text">Полностью контролируем и координируем 
+                            весь праздник в день проведения свадьбы
+                            </p>
+                        <p class="text--min">Мурашки будут даже у самых брутальных гостей!</p>
+                    </div>
+                        <div class="img-block img-block--desc"><img src="./images/work-3.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <h2>Услуги</h2>
+            <div class="container">
+                <div class="wedding">
+                    <div class="img-block"><img src="./images/photo-9.png" alt=""></div>
+                    <h2>СВАДЬБА</h2>
+                    <nav>
+                        <ul>
+                            <li>Персональный менеджер на все время 
+                                подготовки свадьбы</li>
+                            <li>Подбор и предоставление вариантов 
+                                площадки и всех участников 
+                                свадебного дня</li>
+                            <li>Разработка плана дня и сценария 
+                                развлекательной программы</li>
+                            <li>Дизайн и изготовление 
+                                пригласительных (20 шт.)</li>
+                            <li>Свадебный фотограф (6 часов работы)</li>
+                            <li>Свадебный видеограф (5 часов работы)</li>
+                            <li>Ведущая выездной регистрации</li>
+                            <li>Ведущая (опыт работы от 3 лет) + 
+                                ди-джей</li>
+                            <li>Вокально-инструментальное трио 
+                                (3 выхода по 15 минут)</li>
+                            <li>Флористика и декор</li>
+                            <li>Техническое оснащение 
+                                (звуковое и сетевое оборудование)</li>
+                            <li>Свадебный распорядитель в день
+                                свадьбы (1 человек)</li>
+                        </ul>
+                    </nav>
+                    <div class="price">250 000 руб.</div>
+                    <div class="button" data-callme-config>Заказать</div>
+                </div>
+
+
+                <div class="wedding">
+                    <div class="img-block"><img src="./images/photo-10.png" alt=""></div>
+                    <h2>СВАДЬБА</h2>
+                    <nav>
+                        <ul>
+                            <li>Персональный менеджер на все время 
+                                подготовки свадьбы</li>
+                            <li>Подбор и предоставление вариантов 
+                                площадки и всех участников 
+                                свадебного дня</li>
+                            <li>Разработка плана дня и сценария 
+                                развлекательной программы</li>
+                            <li>Дизайн и изготовление 
+                                пригласительных (50 шт.)</li>
+                            <li>Свадебный фотограф (10 часов работы)</li>
+                            <li>Свадебный видеограф (10 часов работы)</li>
+                            <li>Ведущая выездной регистрации</li>
+                            <li>Ведущая (опыт работы от 3 лет) + 
+                                ди-джей</li>
+                            <li>Кавер группа 
+                                (3 выхода по 20 минут)</li>
+                            <li>Флористика и декор</li>
+                            <li>Техническое оснащение 
+                                (звуковое и сетевое оборудование)</li>
+                            <li>Свадебный распорядитель в день
+                                свадьбы (2 человека)</li>
+                            <li>Подбор цветового решения и 
+                                стилистики свадьбы</li>
+                            <li>Анимация на всрече гостей (2 человека)</li>
+                            <li>Свадебный торт </li>
+                        </ul>
+                    </nav>
+                    <div class="price">500 000 руб.</div>
+                    <div class="button" data-callme-config>Заказать</div>
+                </div>
+                <div class="wedding">
+                    <div class="img-block"><img src="./images/photo-11.png" alt=""></div>
+                    <h2>СВАДЬБА</h2>
+                    <nav>
+                        <ul>
+                            <li>Персональный менеджер на все время 
+                                подготовки свадьбы</li>
+                            <li>Подбор и предоставление вариантов 
+                                площадки и всех участников 
+                                свадебного дня</li>
+                            <li>Разработка плана дня и сценария 
+                                развлекательной программы</li>
+                            <li>Дизайн и изготовление 
+                                пригласительных (70 - 100 шт.)</li>
+                            <li>Свадебный фотограф (12 часов работы) + 
+                                ассистент (5 часов)</li>
+                            <li>Свадебный видеограф (2 камеры, 
+                                10 часов работы) + SDE ролик</li>
+                            <li>Ведущая выездной регистрации</li>
+                            <li>Ведущая (опыт работы от 7 лет) + 
+                                ди-джей</li>
+                            <li>Кавер группа (3 выхода по 20 минут)
+                                сопровождение регистрации </li>
+                            <li>Флористика и декор</li>
+                            <li>Техническое оснащение 
+                                (звуковое и сетевое оборудование)</li>
+                            <li>Свадебный распорядитель в день
+                                свадьбы (2 человека)</li>
+                            <li>Подбор цветового решения и 
+                                стилистики свадьбы</li>
+                            <li>Анимация на всрече гостей (2 человека)</li>
+                            <li>Свадебный торт и сладкий стол </li>
+                            <li>Светодиодный экран</li>
+                            <li>Наполнение развлекательной 
+                                программы</li>
+                        </ul>
+                    </nav>
+                    <div class="price">1 000 000 руб.</div>
+                    <div class="button" data-callme-config>Заказать</div>
+                </div>
+            </div>
+        </section>
+        <footer id="contacts" class="main-footer">
+            <h2>Ваша любовь достойна красивой истории</h2>
+            <div class="logo-block">
+                <div class="left-line"></div>
+                <div class="logo-img">
+                    <img src="./images/logo-black-big.png" alt="">
+                </div>
+                <div class="right-line"></div>
+            </div>
+            <div class="contacts">
+                <div class="email">
+                    <p class="text">E-mail</p>
+                    <p class="text--big">Npronchenkova@yandex.ru</p>
+                </div>
+                <div class="instagram">
+                    <p class="text">Instagram</p>
+                    <p class="text--big">@svadba_v_samara</p>
+                </div>
+                <div class="phone">
+                    <p class="text">Телефон</p>
+                    <p class="text--big"> <a href="tel:8-926-454-63-01">8 926 454 63 01</a></p>
+                </div>
+            </div>
+            <div class="button main-footer-button" data-callme-config>Связаться с нами</div>
+        </footer>
+        <div class="container instagram-block">
+            <div class="left">
+                <div class="overlay">
+                    <div class="instagram-logo-block"><img src="./images/social-instagram-big.png" alt=""></div>
+                </div>
+                <img src="./images/photo-12.png" alt="">
+            </div>
+            <div class="right">
+                <div class="img-block">
+                    <img src="./images/photo-13.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="./images/photo-14.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="./images/photo-15.png" alt="">
+                </div>
+                <div class="img-block">
+                    <img src="./images/photo-16.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo-block">
+            <div class="logo-img">
+                <img src="./images/logo-white.png" alt="">
+            </div>
+            <div class="text text--footer">
+                Агенство по организации 
+                свадеб под “ключ” 
+            </div>
+            <div class="socials socials--desc">
+                <div class="inst"><img src="./images/social-instagram.png" alt=""></div>
+                <div class="vk"><img src="./images/social-vk.png" alt=""></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu footer-menu">
+                <li><a href="#about" class="footer-text">О нас</a></li>
+                <li><a href="#gains" class="footer-text">Преимущества</a></li>
+                <li><a href="#portfolio" class="footer-text">Портфолио</a></li>
+                <li><a href="#services" class="footer-text">Услуги</a></li>
+                <li><a href="#works" class="footer-text">Как мы работаем</a></li>
+                <li><a href="#contacts" class="footer-text">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="socials socials--mobile">
+            <div class="inst"><img src="./images/social-instagram.png" alt=""></div>
+            <div class="vk"><img src="./images/social-vk.png" alt=""></div>
+        </div>
+    </footer>
+    <div class="copyright text">
+        © BDSMerried. Все права защищены
+    </div>
+
+    <div class="modal fade" id="modalMenu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-logo"><img src="./images/logo-black.png" alt=""></div>
+              <button type="button" id="closeModalMenuButton" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <nav>
+                    <ul class="menu modal-menu">
+                        <li><a href="#about" class="text text--modal">О нас</a></li>
+                        <li><a href="#gains" class="text text--modal">Преимущества</a></li>
+                        <li><a href="#portfolio" class="text text--modal">Портфолио</a></li>
+                        <li><a href="#services" class="text text--modal">Услуги</a></li>
+                        <li><a href="#works" class="text text--modal">Как мы работаем</a></li>
+                        <li><a href="#contacts" class="text text--modal">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
