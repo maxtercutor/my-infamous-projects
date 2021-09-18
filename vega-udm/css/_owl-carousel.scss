@@ -1,0 +1,41 @@
+#sliderCarousel div.owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: (24px/375px)*100vw;
+    text-align: center;
+  }
+  .owl-carousel button.owl-dot {
+    width: (10px/375px)*100vw;
+    height: (10px/375px)*100vw;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 3px;
+  }
+  .owl-carousel button.owl-dot.active {
+    background: #C4C4C4;
+  }
+
+  .products__cards div.owl-dots {
+      position: relative;
+   
+    margin-top: (24px/375px)*100vw;
+
+    text-align: center;
+    button.owl-dot {
+        border: 1px solid #000000;
+    }
+
+    button.owl-dot.active {
+        background-color: #000000;
+    }
+}
+
+#stagesItems div.owl-dots {
+  position: absolute;
+  width: 100%;
+  
+  bottom: -14vw;
+  
+  text-align: center;
+}

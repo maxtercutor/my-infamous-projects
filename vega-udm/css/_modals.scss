@@ -1,0 +1,214 @@
+.modal-dialog {
+    max-width: 100vw;
+}
+.modal-content {
+    
+    background-color: transparent;
+    border: 0;
+}
+.modal-list {
+    box-sizing: content-box;
+    width: 465px;
+background-color: #C4C4C4;
+
+    // .modal-list__img
+
+    &__img {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    hr {
+        width: (465px - 30px);
+        margin: 0 auto;
+    }
+
+    // .modal-list__ol
+
+    &__ol {
+        padding: 15px;
+
+        li {
+        font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 36px;
+
+color: #1C1C1C;
+
+list-style-type: decimal-leading-zero;
+list-style-position: inside;
+        }
+    }
+}
+
+.modal-form {
+    width: 900px;
+    height: 460px;
+    background-color: #0D1774;
+    border-radius: 16px;
+
+    padding: 80px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    input {
+        width: 712px;
+height: 67px;
+
+background: #FFFFFF;
+border-radius: 16px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 2.4rem;
+line-height: 29px;
+
+border: 0;
+outline: none;
+
+padding: 0 32px;
+    }
+    // .modal-form__submit
+
+    &__submit {
+        width: 460px;
+height: 67px;
+
+background: #FEC400;
+border-radius: 16px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 2.4rem;
+line-height: 67px;
+
+color: #FFFFFF;
+
+text-align: center;
+
+cursor: pointer;
+
+margin-top: 40px;
+
+    }
+
+    button {
+        border: 0;
+        outline: none;
+    }
+}
+
+input::-moz-placeholder { color: #C4C4C4; }
+input::-webkit-input-placeholder { color: #C4C4C4; }
+input:-ms-input-placeholder { color: #C4C4C4; }
+input::-ms-input-placeholder { color: #C4C4C4; }
+input::placeholder { color: #C4C4C4; } 
+
+@media (max-width: 1200px) {
+    .modal-list {
+        
+        width: (345px/375px)*100vw;
+    
+        h3 {
+            font-size: 1.8rem;
+            padding: (15px/375px)*100vw (10px/375px)*100vw;
+        }
+    
+        hr {
+            width: (325px/375px)*100vw;
+        }
+    
+        &__ol {
+            padding: (15px/375px)*100vw (10px/375px)*100vw;
+    
+            li {
+    font-size: 1.2rem;
+    line-height: (24px/375px)*100vw;
+            }
+        }
+    }
+    
+    .modal-form {
+        width: (345px/375px)*100vw;
+        height: (250px/375px)*100vw;
+
+    
+        padding: (40px/375px)*100vw 0;
+    
+        input {
+            width: (305px/375px)*100vw;
+    height:(40px/375px)*100vw;
+    
+    font-size: 1.8rem;
+    line-height: (21px/375px)*100vw;
+    
+    padding: 0 (16px/375px)*100vw;
+        }
+    
+        &__submit {
+            width:(305px/375px)*100vw;
+    height: (40px/375px)*100vw;
+    
+    font-size: 1.8rem;
+    line-height: (40px/375px)*100vw;
+
+    margin-top: (20px/375px)*100vw;
+
+        }
+    }
+}
+
+#modalForm {
+    div.modal-header {
+        border: 0;
+    }
+    
+    .modal-header button.close {
+        width: 30px;
+        height: 30px;
+        
+        background-image: url('../assets/images/close.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        cursor: pointer;
+    }
+}
+
+
+#modalSuccess .modal-content,
+    #modalError .modal-content {
+        background-color: #FFFFFF;
+        font-family: "Roboto";
+
+        h3 {
+            text-align: center;
+            span {
+                color: #DD3535;
+            }
+        }
+
+        p {
+            font-style: normal;
+font-weight: normal;
+font-size: 1.8rem;
+line-height: 27px;
+text-align: center;
+        }
+        button {
+            font-size: 1.4rem;
+            border: 1px solid;
+        }
+    }
