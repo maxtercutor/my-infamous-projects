@@ -1,0 +1,142 @@
+.modal {
+    position: relative;
+    width: 640px;
+    
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.09);
+    background-color: #ffffff;
+
+    border-radius: 8px;
+
+    padding: 52px 34px 40px;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+    justify-content: space-between;
+    }
+    // .modal__image
+
+    &__image {
+        width: 200px;
+    }
+
+    // .modal__form
+
+    &__form {
+        width: 364px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5 {
+            font-family: "PT Serif";
+font-size: 2.8rem;
+font-weight: 700;
+line-height: 22.41px;
+
+color: #222222;
+
+margin: 0;
+
+text-align: center;
+        }
+
+        p {
+            width: 330px;
+            font-family: "PT Serif";
+font-size: 2.2rem;
+font-weight: 700;
+line-height: 22.41px;
+
+color: #222222;
+
+text-align: center;
+        }
+
+        input {
+            width: 332px;
+height: 49px;
+background-color: #ffffff;
+background-image: linear-gradient(to top, #e9e7e5 0%, #f3f0ee 99%, #f3f0ee 100%);
+
+font-family: "Lato";
+font-size: 1.3rem;
+font-weight: 400;
+line-height: 24.82px;
+
+color: #404040;
+
+border: 0;
+outline: none;
+
+padding: 0 25px;
+
+box-sizing: border-box;
+
+margin: 20px auto 0;
+        }
+    }
+
+    // .modal__button
+
+    &__button {
+        width: 332px;
+height: 49px;
+box-shadow: 0 21px 21px rgba(249, 76, 79, 0.36);
+background-color: #ffffff;
+background-image: linear-gradient(to top, #ed2529 0%, #fe676a 99%, #fe676a 100%);
+
+font-family: "Lato";
+font-size: 2.0rem;
+font-weight: 400;
+line-height: 14.89px;
+
+color: #ffffff;
+
+border: 0;
+outline: none;
+
+cursor: pointer;
+
+margin: 20px auto 0;
+    }
+
+    /*&__close {
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        top: 12px;
+        right: 12px;
+
+        background: url('./assets/images/close.png') center/cover no-repeat;
+
+        cursor: pointer;
+        
+    }*/
+}
+
+
+@media (max-width: 660px) {
+    .modal {
+        padding: 26px 9px 20px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    
+    .modal__image {
+        width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .modal__image {
+        display: none;
+    }
+    .modal__wrapper {
+        justify-content: center;
+    }
+}
