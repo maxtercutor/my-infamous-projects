@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="./assets/js/bundle.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container container-flex container-space-between container-align-center">
+          <div class="header__logo"><img width="1087" height="366"   alt="Центр Виватон +" src="./assets/img/cropped-logo.png" style="border: 1px solid;" /></div>
+          <!-- /.header__logo -->
+          <div class="header__info header__info-first" style="border: 1px solid;">
+            <a href="tel:+38 (098) 480-06-73" class="icon-phone header__info-tel">+38 (098) 480-06-73</a>
+            <!-- /.header__info-tel -->
+            <div class="header__info-social">
+              <a href="https://www.facebook.com/vivaton.com.ua" target="_blank" rel="nofollow"><i class="icon-facebook"></i></a>
+              <a href="https://www.instagram.com/vivaton_clinic/" target="_blank" rel="nofollow"><i class="icon-instagram"></i></a>
+              <span id="searchIcon"><i class="icon-search"></i></span>
+            </div>
+            <!-- /.header__info-social -->
+          </div>
+          <!-- /.header__info -->
+          <div class="header__info header__info--header" style="border: 1px solid;"><i class="icon-location"></i><aside><a href="https://www.google.com/maps/place/%D0%A6%D0%B5%D0%BD%D1%82%D1%80+%D1%8D%D1%81%D1%82%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9+%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B+%D0%92%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D0%BD+%2B/@50.3819764,30.4559254,15z/data=!4m5!3m4!1s0x0:0xbde10aa6b77a314c!8m2!3d50.3816186!4d30.4548513">г. Киев,<br />
+    ул. Маршала Якубовского, 6</a></aside></div>
+          <!-- /.header__info -->
+          <div class="header__info" style="border: 1px solid;"><i class="icon-clock" style="border: 1px solid;"></i><aside>Пн-Чт 08:00-18:00, <br />
+    Пт 08:00-17:00</aside></div>
+          <!-- /.header__info -->
+          <button class="header__btn btn" data-fancybox data-src="#modalForm">Записаться на прием</button>
+          <!-- /.header__btn btn -->
+          <div class="header__burger">
+            <span class="header__burger-item"></span>
+            <span class="header__burger-item"></span>
+            <span class="header__burger-item"></span>
+        </div>
+        <!--<div class="header__lang">ru<span>&nbsp;&nbsp;&#9660;</span><span class="header__lang-sub">ua</span></div> <!-- /.header__lang -->
+            <div class="header__lang">
+            <ul id="menu-menu-2" class="language-menu"><li id="menu-item-1831" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-1831"><a href="#pll_switcher"><img  alt="RU" data-src="/vivaton/wp-content/polylang/ru_RU.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /></a>
+    <ul class="sub-menu">
+        <li id="menu-item-1831-ru" class="lang-item lang-item-33 lang-item-ru current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1831-ru"><a href="https://val-glebik.site/vivaton/" hreflang="ru-RU" lang="ru-RU"><img  alt="RU" data-src="/vivaton/wp-content/polylang/ru_RU.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /></a></li>
+        <li id="menu-item-1831-uk" class="lang-item lang-item-50 lang-item-uk menu-item menu-item-type-custom menu-item-object-custom menu-item-1831-uk"><a href="https://val-glebik.site/vivaton/uk/glavnaya-ukra%d1%97nska/" hreflang="uk" lang="uk"><img  alt="Українська" data-src="/vivaton/wp-content/polylang/uk.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /></a></li>
+    </ul>
+    </li>
+    </ul>		</div> <!-- /.header__lang -->
+        </div>
+        <!-- /.container -->
+        <div class="search-form">
+            <div class="container">
+                <form class="search-form__form" role="search" method="get" id="searchform" action="https://val-glebik.site/vivaton/" >
+                    <input class="search-form__input" type="text" value="" name="s" id="s" placeholder="Поиск" />
+                    <input type="submit" id="searchsubmit" value="" />
+                </form>
+                <span class="search-form__close"></span>
+            </div>
+        </div>
+      </header>
+      <!-- /.header -->
+      <div class="menu">
+        <div class="container">
+          <div class="header__burger menu__burger">
+            <span class="header__burger-item"></span>
+            <span class="header__burger-item"></span>
+            <span class="header__burger-item"></span>
+          </div>
+          <nav class="menu-nav">
+          <ul class="menu-list"><li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://val-glebik.site/vivaton/o-nas/" class="leftsidemenu__list_item">О клинике</a></li>
+    <li id="menu-item-320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-320"><a href="https://val-glebik.site/vivaton/hirurgiya/" class="leftsidemenu__list_item">Хирургия</a>
+    <ul class="sub-menu">
+        <li id="menu-item-321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="https://val-glebik.site/vivaton/hirurgiya/konsultacziya-flebologa/" class="leftsidemenu__list_item">Консультация флеболога</a></li>
+        <li id="menu-item-339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-339"><a href="https://val-glebik.site/vivaton/hirurgiya/lechenie-varikoza/" class="leftsidemenu__list_item">Лечение варикоза</a></li>
+        <li id="menu-item-338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-338"><a href="https://val-glebik.site/vivaton/hirurgiya/lazernoe-lechenie-varikoza-evlk/" class="leftsidemenu__list_item">Эндовазальная лазерная коагуляция (ЭВЛК)</a></li>
+        <li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="https://val-glebik.site/vivaton/hirurgiya/skleroterapiya/" class="leftsidemenu__list_item">Склеротерапия вен</a></li>
+        <li id="menu-item-475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475"><a href="https://val-glebik.site/vivaton/hirurgiya/miniflebehktomiya/" class="leftsidemenu__list_item">Минифлебэктомия</a></li>
+        <li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><a href="https://val-glebik.site/vivaton/hirurgiya/trombehktomiya/" class="leftsidemenu__list_item">Тромбэктомия</a></li>
+    </ul>
+    </li>
+    <li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-314"><a href="https://val-glebik.site/vivaton/kosmetologiya/" class="leftsidemenu__list_item">Косметология</a>
+    <ul class="sub-menu">
+        <li id="menu-item-315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315"><a href="https://val-glebik.site/vivaton/kosmetologiya/fotoehpilyaciya/" class="leftsidemenu__list_item">Фотоэпиляция</a></li>
+        <li id="menu-item-317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="https://val-glebik.site/vivaton/kosmetologiya/biorevitalizacziya/" class="leftsidemenu__list_item">Биоревитализация</a></li>
+        <li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-488"><a href="https://val-glebik.site/vivaton/kosmetologiya/konturnaya-plastika/" class="leftsidemenu__list_item">Контурная пластика лица</a></li>
+        <li id="menu-item-487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a href="https://val-glebik.site/vivaton/kosmetologiya/mezoterapiya/" class="leftsidemenu__list_item">Мезотерапия</a></li>
+        <li id="menu-item-1238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238"><a href="https://val-glebik.site/vivaton/kosmetologiya/gidropiling/" class="leftsidemenu__list_item">Гидропилинг (HydraFacial)</a></li>
+        <li id="menu-item-1502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1502"><a href="https://val-glebik.site/vivaton/kosmetologiya/ultrazvukovaya-chistka-lica/" class="leftsidemenu__list_item">Ультразвуковая чистка лица</a></li>
+        <li id="menu-item-1369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1369"><a href="https://val-glebik.site/vivaton/kosmetologiya/gidroksiterapiya/" class="leftsidemenu__list_item">Гидрокситерапия</a></li>
+        <li id="menu-item-1384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1384"><a href="https://val-glebik.site/vivaton/kosmetologiya/karboksiterapiya/" class="leftsidemenu__list_item">Карбокситерапия</a></li>
+        <li id="menu-item-1619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1619"><a href="https://val-glebik.site/vivaton/kosmetologiya/rf-lifting/" class="leftsidemenu__list_item">RF-лифтинг</a></li>
+    </ul>
+    </li>
+    <li id="menu-item-318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-318"><a href="https://val-glebik.site/vivaton/dermatologiya/" class="leftsidemenu__list_item">Дерматология</a>
+    <ul class="sub-menu">
+        <li id="menu-item-340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-340"><a href="https://val-glebik.site/vivaton/dermatologiya/dermatoskopiya/" class="leftsidemenu__list_item">Дерматоскопия</a></li>
+        <li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="https://val-glebik.site/vivaton/dermatologiya/konsultacziya-dermatologa/" class="leftsidemenu__list_item">Консультация дерматолога</a></li>
+        <li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="https://val-glebik.site/vivaton/dermatologiya/udalenie-novoobrazovanij-kozhi/" class="leftsidemenu__list_item">Удаление новообразований кожи</a></li>
+        <li id="menu-item-505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="https://val-glebik.site/vivaton/dermatologiya/diagnosticheskaya-biopsiya/" class="leftsidemenu__list_item">Диагностическая биопсия кожи</a></li>
+        <li id="menu-item-504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504"><a href="https://val-glebik.site/vivaton/dermatologiya/biopsiya-molochnoj-zhelezy/" class="leftsidemenu__list_item">Биопсия молочной железы  (ТАБ)</a></li>
+        <li id="menu-item-503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-503"><a href="https://val-glebik.site/vivaton/dermatologiya/britvennaya-ehksciziya/" class="leftsidemenu__list_item">Бритвенная эксцизия (эксцизионная биопсия кожи)</a></li>
+    </ul>
+    </li>
+    <li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-319"><a href="https://val-glebik.site/vivaton/uzi/" class="leftsidemenu__list_item">УЗИ диагностика</a>
+    <ul class="sub-menu">
+        <li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="https://val-glebik.site/vivaton/uzi/uzi-organov-bryushnoj-polosti/" class="leftsidemenu__list_item">УЗИ органов брюшной полости</a></li>
+        <li id="menu-item-524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524"><a href="https://val-glebik.site/vivaton/uzi/uzi-pochek/" class="leftsidemenu__list_item">УЗИ почек</a></li>
+        <li id="menu-item-525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-525"><a href="https://val-glebik.site/vivaton/uzi/uzi-molochnyh-zhelez/" class="leftsidemenu__list_item">УЗИ молочных желез</a></li>
+        <li id="menu-item-526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-526"><a href="https://val-glebik.site/vivaton/uzi/uzi-shchitovidnoj-zhelezy/" class="leftsidemenu__list_item">УЗИ щитовидной железы</a></li>
+        <li id="menu-item-523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523"><a href="https://val-glebik.site/vivaton/uzi/uzi-ven-nizhnih-konechnostej/" class="leftsidemenu__list_item">УЗИ вен нижних конечностей</a></li>
+        <li id="menu-item-1085" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1085"><a href="https://val-glebik.site/vivaton/uzi/ehkhokardiografiya-uzi-serdca/" class="leftsidemenu__list_item">Эхокардиография (УЗИ сердца)</a></li>
+        <li id="menu-item-1086" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1086"><a href="https://val-glebik.site/vivaton/uzi/uzi-sosudov-shei-i-golovy/" class="leftsidemenu__list_item">УЗИ сосудов шеи и головы</a></li>
+    </ul>
+    </li>
+    <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://val-glebik.site/vivaton/vrachi/" class="leftsidemenu__list_item">Врачи</a></li>
+    <li id="menu-item-1161" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1161"><a href="https://val-glebik.site/vivaton/stati/" class="leftsidemenu__list_item">Статьи</a></li>
+    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://val-glebik.site/vivaton/czeny/" class="leftsidemenu__list_item">Цены</a></li>
+    <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://val-glebik.site/vivaton/kontakty/" class="leftsidemenu__list_item">Контакты</a></li>
+    </ul>      </nav>
+          <!-- /.menu-nav -->
+          <div class="menu__col">
+            <div class="footer__info"><i class="icon-clock"></i>Пн-Чт 08:00-18:00, <br />
+    Пт 08:00-17:00</div>
+            <div class="footer__info"><i class="icon-location"></i><a href="https://www.google.com/maps/place/%D0%A6%D0%B5%D0%BD%D1%82%D1%80+%D1%8D%D1%81%D1%82%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9+%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B+%D0%92%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D0%BD+%2B/@50.3819764,30.4559254,15z/data=!4m5!3m4!1s0x0:0xbde10aa6b77a314c!8m2!3d50.3816186!4d30.4548513">г. Киев,<br />
+    ул. Маршала Якубовского, 6</a></div>
+            <a href="tel:+38 (098) 480-06-73" class="icon-phone footer__info footer__info-first">+38 (098) 480-06-73</a>
+              <a href="tel:+38 (066) 267-45-61" class="footer__info">+38 (066) 267-45-61</a>
+              <a href="tel:+38 (063) 589-93-47" class="footer__info">+38 (063) 589-93-47</a>
+              <a href="tel:+38 (044) 334-35-03" class="footer__info">+38 (044) 334-35-03</a>
+              <div class="footer__social">
+                <a href="https://www.facebook.com/vivaton.com.ua"><i class="icon-facebook"></i></a>
+                <a href="https://www.instagram.com/vivaton_clinic/"><i class="icon-instagram"></i></a>
+              </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.menu -->
+</body>
+</html>
