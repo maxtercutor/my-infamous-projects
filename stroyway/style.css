@@ -1,0 +1,13 @@
+/*
+Theme Name: StroyWay-Theme
+Template: twentynineteen
+
+Theme URI: https://stroyway.com/
+Description: Дочерняя тема для темы twentynineteen
+Author: Maxtercutor
+Author URI: https://stroyway.com/about/
+Version: 1.0
+*/
+
+/* импортируем стили родительской темы */
+@import url("../twentynineteen/style.css");
