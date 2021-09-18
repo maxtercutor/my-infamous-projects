@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto_regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/roboto_bold.ttf);
+}
+html {
+  font-size: 0.52083333vw;
+}
+h1 {
+  font-family: "Roboto Bold";
+  font-size: 7.2rem;
+  line-height: 4.375vw;
+  color: #ffeb3c;
+}
+.h1--blog,
+.h1--post {
+  font-size: 3.2rem;
+  line-height: 3.125vw;
+  color: #000000;
+}
+h2 {
+  font-family: "Roboto Bold";
+  font-size: 4.8rem;
+  line-height: 2.91666667vw;
+  color: #ffeb3c;
+}
+.h2--post {
+  font-size: 2rem;
+  color: #000000;
+  text-align: left;
+  line-height: 1.30208333vw;
+}
+h3 {
+  font-family: "Roboto Bold";
+  font-size: 3.6rem;
+  line-height: 2.1875vw;
+  color: #ffeb3c;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: underline;
+}
+input {
+  padding: 0px 1.5vw;
+}
+input,
+.button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1.71875vw;
+  color: #ffffff;
+}
+.slogan,
+.business-info-text {
+  font-family: "Roboto";
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.business-info-text a:hover {
+  text-decoration: underline;
+}
+.menu {
+  list-style-type: none;
+}
+.header__menu {
+  font-family: "Roboto Bold";
+  font-size: 2rem;
+  line-height: 1.09375vw;
+  color: #ffffff;
+}
+.header__menu li a:hover {
+  color: #ffeb3c;
+  text-decoration: none;
+}
+.active {
+  color: #ffeb3c;
+}
+.our-advantages {
+  font-family: "Roboto Bold";
+  font-size: 3.6rem;
+  line-height: 1.04166667vw;
+  color: #ffffff;
+}
+.footer {
+  width: 78.90625vw;
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  line-height: 0.72916667vw;
+  color: #ffffff;
+}
+figcaption {
+  font-family: "Roboto";
+  font-size: 3rem;
+  line-height: 1.82291667vw;
+  color: #ffffff;
+  text-align: center;
+}
+.figure--min figcaption {
+  font-size: 2.5rem;
+  line-height: 1.5625vw;
+}
+.p--big {
+  width: 71.97916667vw;
+  font-family: "Roboto";
+  font-size: 3.6rem;
+  line-height: 2.1875vw;
+  color: #ffffff;
+  text-align: center;
+}
+.p--small {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  line-height: 1.09375vw;
+  color: #ffffff;
+}
+label {
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  line-height: 1.45833333vw;
+  color: #ffffff;
+}
+label.radio {
+  font-size: 3.6rem;
+  line-height: 2.70833333vw;
+}
+.answers-block--skvazhiny figcaption {
+  font-size: 2.2rem;
+  line-height: 1.30208333vw;
+}
+.price-table {
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  line-height: 1.875vw;
+  color: #131313;
+}
+.price-table .caption {
+  font-family: "Roboto Bold";
+}
+.pp-content {
+  font-family: "Roboto";
+  font-size: 2rem;
+  color: #ffffff;
+}
+input::-webkit-input-placeholder {
+  color: transparent;
+}
+.post-text {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  line-height: 1.14583333vw;
+  text-align: justify;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 2.66666667vw;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 6.93333333vw;
+  }
+  h2,
+  h3 {
+    font-size: 1.8rem;
+    line-height: 5.6vw;
+    text-align: center;
+  }
+  input {
+    padding: 0px 1.5vw;
+  }
+  input,
+  .button {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 1.71875vw;
+    color: #ffffff;
+  }
+  .slogan {
+    font-size: 1.2rem;
+  }
+  .our-advantages {
+    font-family: "Roboto";
+    font-size: 1.8rem;
+    line-height: 5.6vw;
+  }
+  .footer {
+    font-size: 1.2rem;
+    line-height: 0.26666667vw;
+  }
+  figcaption,
+  .figure--min figcaption {
+    font-size: 1.3rem;
+    line-height: 5.6vw;
+  }
+  .p--big {
+    width: 84.26666667vw;
+    font-family: "Roboto Bold";
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .p--small {
+    font-size: 1.2rem;
+    line-height: 4.8vw;
+    text-align: center;
+  }
+  label.radio {
+    font-size: 2.4rem;
+    line-height: 12vw;
+  }
+  .answers-block--skvazhiny figcaption {
+    font-size: 1.3rem;
+    line-height: 5.6vw;
+  }
+  .h2--price,
+  .h2--otzyvy,
+  .h2--portfolio {
+    font-size: 2.8rem;
+    line-height: 8.8vw;
+  }
+  .price-table {
+    font-size: 1.2rem;
+    line-height: 5.33333333vwvw;
+  }
+  .pp-content {
+    font-family: "Roboto";
+    font-size: 1.3rem;
+    color: #ffffff;
+  }
+  input::-webkit-input-placeholder {
+    font-family: "Roboto";
+    font-size: 2.4rem;
+    line-height: 7.46666667vw;
+    color: #ffffff;
+    text-align: center;
+  }
+  .menu--mobile,
+  .business-info-text--mobile {
+    font-family: "Roboto";
+    font-size: 1.8rem;
+    line-height: 10.66666667vw;
+    color: #ffffff;
+  }
+}

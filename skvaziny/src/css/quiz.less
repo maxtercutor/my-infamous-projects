@@ -1,0 +1,411 @@
+.quiz-container {
+    position: absolute;
+    width: 1515/19.2vw;
+    height: 862/19.2vw;
+}
+
+.quiz-page,
+.pp-container,
+.success-message,
+.error-message {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 1515/19.2vw;
+    height: 620/19.2vw;
+    border-radius: 16/19.2vw; 
+    opacity: 0;
+    z-index: 1;
+    transition: 1.0s;
+}
+
+.success-message,
+.error-message {
+    opacity: 1.0;
+}
+
+.quiz-page--max {
+    height: 950/19.2vw;
+}
+
+.quiz-page--input,
+.quiz-page--form {
+    justify-content: space-between;
+}
+
+.h2--quiz,
+.h2--skvazhiny {
+    position: relative;
+    top: -50/19.2vw;
+}
+
+.h3--quiz {
+    position: relative;
+    top: -20/19.2vw;
+}
+
+figure {
+    min-width: 300/19.2vw;
+    max-width: 320/19.2vw;
+    //max-width: 334/19.2vw;
+    height: 350/19.2vw;
+    margin: 0px;
+}
+
+figcaption {
+    position: relative;
+    top: 20/19.2vw;
+}
+
+figure img:not(.check-box):hover {
+    transform: scale(1.1);
+}
+
+figure img:hover {
+    cursor: pointer;
+}
+
+.answers-block {
+    width: 1400/19.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answers-block--radio {
+    flex-direction: column;
+    height: 358/19.2vw;
+}
+
+.answers-block--max {
+    flex-wrap: wrap;
+    position: relative;
+    top: 1.0vw;
+    top: 0px;
+}
+
+.answers-block--skvazhiny {
+    
+    figure {
+        min-width: 215/19.2vw;
+        max-width: 215/19.2vw;
+    }
+}
+
+.figure--max {
+    position: relative;
+    width: 215/19.2vw;
+    height: 380/19.2vw;
+}
+
+.next-button {
+    position: relative;
+    width: 252/19.2vw;
+    top: 10/19.2vw;
+}
+
+.before {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), white);
+    height: 3.4vw;
+    width: 1.5vw;
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 2.2vw;
+    transform: skewX(-45deg);
+}
+
+.animated {
+    animation: animated-next-button 1.0s ease-in-out;
+}
+
+.next-button--input {
+    top: -73/19.2vw;
+}
+
+.form__button {
+    position: relative;
+    top: -1.5vw;
+}
+
+input {
+    border: 2px solid #ffffff;
+    border-radius: 16/19.2vw;
+    background-color: transparent;
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label[for="do3"],
+label[for="3-6"],
+label[for="6-9"],
+label[for="bolee9"],
+label[for="odin"],
+label[for="dva"],
+label[for="tri"],
+label[for="chetyre"],
+label[for="nizkij"],
+label[for="vysokij"],
+label[for="nuzhna_konsultatsiya"],
+label[for="do40m"],
+label[for="40-90m"],
+label[for="90-130m"],
+label[for="bolee130m"] {
+    width: 360/19.2vw;
+    position: relative;
+    top: -5.0vw;
+    left: 200/19.2vw;
+}
+
+label.radio:before {
+    content: "";
+    display: inline-block;
+    width: 52/19.2vw;
+    height: 52/19.2vw;
+    position: absolute;
+    left: -8.5vw;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%; 
+}
+
+input[type="radio"]:checked + label.radio:before {
+    content: "\2022";
+    color: #ffffff;
+    font-size: 6.0rem;
+    text-align: center;
+    line-height: 52/19.2vw; }
+
+input[id="phone"] {
+    text-align: center;
+    border-color: #3adb4a;;
+}
+
+.input--quiz {
+    width: 252/19.2vw;
+    height: 65/19.2vw;
+}
+
+.input--form {
+    width: 352/19.2vw;
+    height: 65/19.2vw;
+    margin-top: -1.5vw;
+}
+
+.p--big {
+    margin-top: -2.5vw;
+}
+
+.p--small {
+    margin-top: -3.5vw;
+}
+
+.input-container {
+    position: relative;
+}
+
+label {
+   position: absolute;
+   right: 20vw;
+}
+
+.checked {
+    position: absolute;
+    width: 50/19.2vw;
+    top: 1vw;
+    left: 1vw;
+    display: none;
+}
+
+.privacy-policy-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pp-container {
+    opacity: 1.0;
+}
+
+.h2--pp {
+
+    margin-top: 0px;
+}
+
+.pp-content {
+    width: 1000/19.2vw;
+    text-align: justify;
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    
+}
+
+@media (max-width: 480px) {
+    .quiz-container {
+        width: 335/3.75vw;
+        height: 940/3.75vw;
+    }
+    
+    .quiz-page,
+    .success-message,
+    .pp-container,
+    .error-message {
+        flex-direction: column;
+        
+        width: 335/3.75vw;
+        height: 600/3.75vw;
+        
+        border-radius: 8/3.75vw; 
+
+        padding: 10vw 0px;
+    }
+
+    .pp-container {
+        height: 900/3.75vw;
+    }
+    
+    .quiz-page--max {
+        height: 900/3.75vw;
+    }
+    
+    
+    .h2--quiz {
+        top: -5vw;
+        text-align: center;
+    }
+
+    .h2--skvazhiny {
+        top: 0px;
+    }
+    
+    .h3--quiz {
+
+        top: -5vw;
+    }
+    
+    figure,
+    .figure--max {
+        min-width: 114/3.75vw;
+        width: 114/19.2vw;
+        height: 170/3.75vw;
+        margin: 0px;
+    }
+    
+    figcaption {
+        top: 1.0vw;
+    }
+    
+    .answers-block {
+        width: 288/3.75vw;
+
+        flex-wrap: wrap;
+        margin-top: 7vw;
+    }
+    
+    .answers-block--radio {
+        position: relative;
+        height: 400/3.75vw;
+        justify-content: space-around;
+        top: -5vw
+    }
+    
+    .answers-block--max {
+        top: -5vw;
+    }
+    
+    .answers-block--skvazhiny {
+        figure {
+            min-width: 114/3.75vw;
+        }
+    }
+    
+    .next-button {
+        
+        width: 252/3.75vw;
+        top: 0vw;
+    }
+
+    .before {
+        height: 57.5/3.75vw;
+        width: 28.8/3.75vw;
+        left: 10.0vw;
+    }
+    
+    .next-button--input {
+        top: -73/19.2vw;
+    }
+    
+    .form__button {
+        position: relative;
+        top: -1.5vw;
+    }
+    
+    input {
+        border-radius: 16/3.75vw;
+    }
+
+    .quiz-page--form label {
+        display: none;
+    }
+    
+    
+    label[for="do3"],
+    label[for="3-6"],
+    label[for="6-9"],
+    label[for="bolee9"],
+    label[for="odin"],
+    label[for="dva"],
+    label[for="tri"],
+    label[for="chetyre"],
+    label[for="nizkij"],
+    label[for="vysokij"],
+    label[for="nuzhna_konsultatsiya"],
+    label[for="do40m"],
+    label[for="40-90m"],
+    label[for="90-130m"],
+    label[for="bolee130m"] {
+        width: 180/3.75vw;
+
+        top: 0vw;
+        left: 15vw;
+    }
+    
+    label.radio:before {
+        content: "";
+
+        width: 40/3.75vw;
+        height: 40/3.75vw;
+        
+        left: -20vw;
+    }
+    
+    input[type="radio"]:checked + label.radio:before {
+
+        font-size: 6.0rem;
+
+        line-height: 40/3.75vw; 
+    }
+    
+    .input--quiz {
+        width: 252/3.75vw;
+        height: 65/3.75vw;
+    }
+    
+    .input--form {
+        width: 297/3.75vw;
+        height: 55/3.75vw;
+        margin-top: 0vw;
+    }
+
+    .checked {
+        
+        width: 30/3.75vw;
+    }
+}

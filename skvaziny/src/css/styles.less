@@ -1,0 +1,560 @@
+@keyframes animated-button {
+    0% {
+      left: 2,2vw;
+      opacity: 0; }
+    5% {
+      opacity: 1.0; }
+    20% {
+      left: 14.7vw;
+      opacity: 0; }
+    100% {
+      left: 14.7vw;
+      opacity: 0; } 
+}
+
+@keyframes animated-next-button {
+    0% {
+      left: 2,2vw;
+      opacity: 1; } 
+    100% {
+        left: 9.5vw;
+      opacity: 0; }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button {
+    width: 352/19.2vw;
+    height: 65/19.2vw;
+    border-radius: 16/19.2vw;
+    background-color: #3adb4a;
+    border: 0px;
+}
+
+.body--glavnaya,
+.body--prajs,
+.body--portfolio,
+.body--otzyvy,
+.body--blog,
+.body--post {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-glavnaya.jpg);
+    background-size: cover;
+}
+
+.body--otoplenie {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-otoplenie.jpg);
+    background-size: cover;
+}
+
+.body--skvazhiny {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-skvazhiny.jpg);
+    background-size: cover;
+}
+
+.body--vodopodgotovka {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-vodopodgotovka.jpg);
+    background-size: cover;
+}
+
+.body--septiki {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-septiki.jpg);
+    background-size: cover;
+}
+
+.header {
+    width: 1515/19.2vw;
+    margin-top: 31/19.2vw;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__section {
+    height: 38/19.2vw;;
+}
+
+.logo-img,
+.slogan {
+    padding: 0px 15/19.2vw;
+}
+
+.logo-img {
+    width: 150/19.2vw;
+    height: 2.5vw;
+    border-right: 2px solid #ffffff;
+    padding-left: 0px;
+
+    img {
+        width: 150/19.2vw;
+    }
+}
+
+.business-info-text {
+    padding: 0px 20/19.2vw;
+}
+
+.business-info-text:last-of-type {
+    padding-right: 0px;
+}
+
+.burger {
+    display: none;
+}
+
+ul {
+    padding: 0px;
+}
+
+.header__menu {
+    width: 1515/19.2vw;
+    margin-top: 31/19.2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 1515/19.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main--prajs,
+.main--portfolio,
+.main--otzyvy {
+    align-items: center;
+}
+
+.main--prajs {
+    margin-top: -150/19.2vw;
+}
+
+.main--portfolio,
+.main--otzyvy {
+    margin-top: 50/19.2vw;
+}
+
+.main--post {
+    height: auto;
+    background-color: #ffffff;
+    padding: 2vw 10vw;
+
+    align-items: center;
+    margin: 1.5vw 0px;
+}
+
+.img--post {
+    margin: 2vw 0px;
+    text-align: center;
+}
+
+.certificates {
+    width: 1074/19.2vw;
+}
+
+.certificate-img {
+    width: 228/19.2vw;
+}
+
+.certificate-img:hover {
+    opacity: 0.8;
+}
+
+.h1 {
+    margin-top: -200/19.2vw;
+    
+}
+
+.h2 {
+    position: relative;
+    top: -70/19.2vw;
+}
+
+.h2--price {
+    margin-top: -7.0vw;
+}
+
+.h2--portfolio,
+.h2--otzyvy {
+    margin-top: -7.0vw;
+}
+
+.main__button {
+    position: relative;
+    top: 150/19.2vw;
+}
+
+.main__button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), white);
+    height: 3.4vw;
+    width: 1.5vw;
+    position: absolute;
+    opacity: 1;
+    top: 0px;
+    left: 2.2vw;
+    transform: skewX(-45deg);
+    animation: animated-button 5.5s ease-in-out infinite; 
+}
+
+.price {
+    background-image: url(../images/fon-prajs.png);
+    background-size: cover;
+    width: 1515/19.2vw;
+    height: 620/19.2vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price-table {
+    width: 650/19.2vw;
+    margin-top: -4.0vw;
+
+    .caption {
+        height: 150/19.2vw;
+    }
+
+    td:nth-child(even) {
+        text-align: right;
+    }
+}
+
+.video {
+    width: 1515/19.2vw;
+    height: 498/19.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+
+.single-clip {
+    width: 330/19.2vw;
+    height: 205/19.2vw;
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    iframe {
+        width: 330/19.2vw;
+        height: 205/19.2vw;
+        border: 2/19.2vw solid #ffffff;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31/19.2vw;
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+
+}
+
+@media (max-width: 480px) {
+    @content-width: 325/3.75vw;
+    @certificate-width: 134/3.75vw;
+
+    @keyframes animated-button {
+        0% {
+          left: 10.0vw;
+          opacity: 0; }
+        5% {
+          opacity: 1.0; }
+        20% {
+          left: 69vw;
+          opacity: 0; }
+        100% {
+          left: 69vw;
+          opacity: 0; } 
+    }
+
+    @keyframes animated-next-button {
+        0% {
+          left: 10.0vw;
+          opacity: 1; }
+        100% {
+          left: 49.5vw;
+          opacity: 0; } 
+    }
+
+    body {
+        width: 100vw;
+        height: 155vh;
+    }
+    
+    .button {
+        width: 325/3.75vw;
+        height: 62/3.75vw;
+        border-radius: 16/3.75vw;
+    }
+    
+    .body--glavnaya,
+    .body--prajs,
+    .body--portfolio,
+    .body--otzyvy {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-glavnaya-mob.png);
+        background-size: 100% 105%;
+    }
+    
+    .body--otoplenie {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-otoplenie-mob.png);
+        background-size: 100% 110%;
+    }
+    
+    .body--skvazhiny {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-skvazhiny-mob.png);
+        background-size: 100% 110%;
+    }
+    
+    .body--vodopodgotovka {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-vodopodgotovka-mob.png);
+        background-size: 100% 110%;
+    }
+    
+    .body--septiki {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-septiki-mob.png);
+        background-size: 100% 110%;
+    }
+    
+    .header {
+        width: @content-width;
+        margin-top: 20/3.75vw;
+    }
+    
+    .header__section {
+        height: 20/3.75vw;
+    }
+    
+    .logo-img,
+    .slogan {
+        padding: 0px 5/3.75vw;
+    }
+    
+    .logo-img {
+        width: 100/3.75vw;
+        height: 6.0vw;
+        border-right: 2px solid #ffffff;
+        padding-left: 0px;
+
+        img {
+            width: 100/3.75vw;
+        }
+    }
+
+    .business-info {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 30/3.75vw;
+    }
+
+    .burger:hover {
+        cursor: pointer;
+    }
+    
+    .header__menu {
+        display: none;
+    }
+    
+    .main {
+        width: @content-width;
+        position: relative;
+        top: -20vw;
+    }
+
+    .main--glavnaya {
+        position: absolute;
+        top: 24vw;
+    }
+    
+    .main--prajs {
+        margin-top: -150/3.75vw;
+    }
+    
+    .main--portfolio,
+    .main--otzyvy {
+        margin-top: 50/19.2vw;
+    }
+
+    .our-advantages--quiz {
+        position: relative;
+        top: -30vw;
+    }
+
+    .our-advantages p {
+        margin: 0px;
+        width: 300/3.75vw;
+    }
+    
+    .certificates {
+        width: @content-width;
+        height: 420/3.75vw;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 53.0vw;
+    }
+    
+    .certificate-img {
+        width: @certificate-width;
+    }
+
+    .certificate-img:last-of-type {
+        margin-left: @content-width/2 - @certificate-width/2vw;
+    }
+    
+    .h1 {
+        width: 262/3.75vw;
+        position: relative;
+        margin-top: 0px;
+        top: -150/3.75vw;
+    }
+    
+    .h2 {
+        position: relative;
+        top: -70/19.2vw;;
+    }
+    
+    .main__button {
+        position: relative;
+        top: 50/3.75vw;
+    }
+
+    .main__button:before {
+        height: 62.0/3.75vw;
+        width: 28.8/3.75vw;
+        top: 0px;
+        left: 10.0vw; 
+    }
+    
+    .price {
+        width: 337/3.75vw;
+        height: 459/3.75vw;
+        margin-top: 7.0vw;
+        
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 16/3.75vw;
+    }
+
+    .h2--price {
+        margin-top: -50vw;
+    }
+
+    .h2--otzyvy,
+    .h2--portfolio {
+        margin-top: -330/3.75vw;
+    }
+    
+    .price-table {
+        width: 320/3.75vw;
+        margin-top: 0vw;
+    
+        .caption {
+            height: 30/3.75vw;
+        }
+
+        .caption--second {
+            display: none;
+        }
+    
+        td:nth-child(even) {
+            text-align: right;
+        }
+
+        td {
+            padding: 1vw 0px;
+        }
+    }
+    
+    .video {
+        width: 225/3.75vw;
+        height: 800/3.75vw;
+
+        align-items: center;
+        position: absolute;
+        top: -75vw; 
+    }
+    
+    .single-clip {
+        width: 225/3.75vw;
+        height: 145/3.75vw;
+        iframe {
+            width: 225/3.75vw;
+            height: 145/3.75vw;
+            border: 2/19.2vw solid #ffffff;
+        }
+    }
+
+    .single-clip:nth-child(6),
+    .single-clip:nth-child(7),
+    .single-clip:nth-child(8) {
+        display: none;
+    }
+    
+    .footer {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-bottom: 20/3.75vw;
+
+        p {
+            width: 320/3.75vw;
+            text-align: center;
+        }
+
+        p:nth-child(2) {
+            display: none;
+        }
+    }
+
+    .mobile-menu {
+        width: 335/3.75vw;
+        height: 600/3.75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: rgba(36, 36, 36, 0.8);
+        margin-bottom: -30px;
+        border-radius: 8px;
+
+        transition: 1.0s;
+    }
+
+    .business-info--mobile {
+        flex-direction: column;
+        height: 100/3.75vw;
+    }
+}

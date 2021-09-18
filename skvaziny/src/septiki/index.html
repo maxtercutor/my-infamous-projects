@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <!--endbuild-->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--build:js js/main.min.js-->
+    <script src="../js/jquery.maskedinput.min.js"></script>
+    <script src="../js/dialog.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <!--endbuild-->
+	<title>Септики</title>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		ym(56099653, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/56099653" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+    <title>Монтаж септиков</title>
+</head>
+<body class="body--septiki">
+    <div id="header" class="header">
+        <section class="section header__section">
+            <div class="section logo-block">
+                <div class="logo-img">
+                    <a href="../">
+                        <img src="../images/logo.png" alt="Компания Своток">
+                    </a>
+                </div>
+                <div class="slogan">
+                    Вода - <br>наш профиль
+                </div>
+            </div>
+            <div class="section business-info">
+                <div class="business-info-text"><a href="tel:+7-499-322-49-38">+7 499 322 49 38</a></div>
+                <div class="business-info-text"><a href="mailto:mail@svotok.ru">mail@svotok.ru</a></div>
+                <div class="business-info-text">Ежедневно c 9:00 до 21:00</div>
+            </div>
+            <div class="burger"><img src="../images/burger.png" alt=""></div>
+        </section>  
+        <nav>
+            <ul class="menu header__menu">
+                <li><a href="../">О нас</a></li>
+                <li><a href="../otoplenie">Монтаж отопления</a></li>
+                <li><a href="../skvazhiny">Бурение скважин</a></li>
+                <li><a href="../vodopodgotovka">Водоподготовка</a></li>
+                <li class="active">Монтаж септиков</li>
+                <li><a href="../prajs">Прайс лист</a></li>
+                <li><a href="../portfolio">Портфолио</a></li>
+                <li><a href="../otzyvy">Отзывы</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main" class="main">
+        <h1 class="h1">
+                Установим септик за 2 дня!
+        </h1>
+        <section class="our-advantages">
+            <p>Качественный монтаж и сохранность территории!</p>
+            <p>Обеспечим комфорт на 50 лет.</p>
+        </section>
+        <button id="start_button" class="button main__button">Рассчитать</button>
+    </main>
+    <div id="footer" class="footer">
+        <p>ООО «Своток» - Монтаж инженерных коммуникаций</p>
+        <p>Работаем с 1998 года</p>
+        <p id="privacy_policy_button" class="privacy-policy-button">Политика конфиденциальности</p>
+        <p>Сайт не является публичой офертой</p>
+    </div>
+	<template id="tmpl">
+        <div id="quiz_container" class="quiz-container">
+             <div class="quiz-page">
+                 <h2 class="h2--quiz">Выберите тип строения</h2>
+                 <div class="answers-block">
+                     <figure class="figure">
+                         <img src="../images/dom-dacha.png" alt="Дом/дача">
+                         <figcaption>Дом/дача</figcaption>
+                     </figure>
+                     <figure class="figure">
+                         <img src="../images/taunkhaus.png" alt="Танхаус">
+                         <figcaption>Танхаус</figcaption>
+                     </figure>
+                     <figure class="figure">
+                         <img src="../images/kafe-restoran.png" alt="Кафе/ресторан">
+                         <figcaption>Кафе/ресторан</figcaption>
+                     </figure>
+                     <figure class="figure">
+                         <img src="../images/drugoe.png" alt="Другое">
+                         <figcaption>Другое</figcaption>
+                     </figure>
+                 </div>
+             </div>
+             <div class="quiz-page quiz-page--input">
+                 <h2>Укажите предполагаемое количество пользователей</h2>
+                 <div class="answers-block answers-block--radio">
+                    <input type="radio" name="do3" id="do3"><label for="do3" class="radio">До 3</label>
+                    <input type="radio" name="3-6" id="3-6"><label for="3-6" class="radio">3-6</label>
+                    <input type="radio" name="6-9" id="6-9"><label for="6-9" class="radio">6-9</label>
+                    <input type="radio" name="bolee9" id="bolee9"><label for="bolee9" class="radio">Более 9</label>
+                 </div>
+             </div>
+             <div class="quiz-page quiz-page--input">
+                 <h2>Общее количество сан узлов</h2>
+                 <div class="answers-block answers-block--radio">
+                    <input type="radio" name="odin" id="odin"><label for="odin" class="radio">Один</label>
+                    <input type="radio" name="dva" id="dva"><label for="dva" class="radio">Два</label>
+                    <input type="radio" name="tri" id="tri"><label for="tri" class="radio">Три</label>
+                    <input type="radio" name="chetyre" id="chetyre"><label for="chetyre" class="radio">Четыре и более</label>
+                 </div>
+             </div> 
+     
+             <div class="quiz-page quiz-page--input">
+                 <h2>Уровень грунтовых вод?</h2>
+                 <div class="answers-block answers-block--radio">
+                    <input type="radio" name="nizkij" id="nizkij"><label for="nizkij" class="radio">Низкий</label>
+                    <input type="radio" name="vysokij" id="vysokij"><label for="vysokij" class="radio">Высокий</label>
+                    <input type="radio" name="nuzhna_konsultatsiya" id="nuzhna_konsultatsiya"><label for="nuzhna_konsultatsiya" class="radio">Нужна консультация</label>
+                 </div> 
+             </div> 
+             <form id="form" class="quiz-page quiz-page--form">
+                 <h2>Вы успешно прошли тест!</h2>
+                 <p class="p--big">
+                     Для подтверждения заказа оставьте телефон, мы закрепим за номером скидку 10% и вышлем расчет по СМС или на мессенджер.
+                 </p>
+                 <p class="p--small">
+                     Для более точного расчета стоимости и уточнения деталей в ближайшее время с вами свяжется наш специалист.
+                 </p>
+                 <input type="hidden" name="quiz" id="quiz" value="">
+                 <div class="input-container"><label for="name">Имя</label><input id="name" name="name" type="text" placeholder="Имя" class="input--form" pattern="^[а-яА-ЯёЁ]+$"></div>
+                 <div class="input-container"><label for="phone">Телефон</label><input required id="phone" name="phone" type="text" placeholder="Телефон" class="input--form"></div>
+                 <button id="submit_button" type="submit" class="button form__button">Готово</button>
+             </form>
+         </div>
+	</template>
+</body>
+</html>

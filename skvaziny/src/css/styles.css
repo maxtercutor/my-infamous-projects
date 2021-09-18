@@ -1,0 +1,623 @@
+@-webkit-keyframes animated-button {
+  0% {
+    left: 2.2vw;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    left: 14.7vw;
+    opacity: 0;
+  }
+  100% {
+    left: 14.7vw;
+    opacity: 0;
+  }
+}
+@keyframes animated-button {
+  0% {
+    left: 2.2vw;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    left: 14.7vw;
+    opacity: 0;
+  }
+  100% {
+    left: 14.7vw;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes animated-next-button {
+  0% {
+    left: 2,2vw;
+    opacity: 1;
+  }
+  100% {
+    left: 9.5vw;
+    opacity: 0;
+  }
+}
+@keyframes animated-next-button {
+  0% {
+    left: 2,2vw;
+    opacity: 1;
+  }
+  100% {
+    left: 9.5vw;
+    opacity: 0;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  height: 125vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+}
+button:hover {
+  cursor: pointer;
+}
+.button {
+  width: 18.33333333vw;
+  height: 3.38541667vw;
+  border-radius: 0.83333333vw;
+  background-color: #3adb4a;
+  border: 0px;
+}
+.body--glavnaya,
+.body--prajs,
+.body--portfolio,
+.body--otzyvy,
+.body--blog,
+.body--post {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-glavnaya.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-glavnaya.jpg);
+  background-size: cover;
+}
+.body--otoplenie {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-otoplenie.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-otoplenie.jpg);
+  background-size: cover;
+}
+.body--skvazhiny {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-skvazhiny.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-skvazhiny.jpg);
+  background-size: cover;
+}
+.body--vodopodgotovka {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-vodopodgotovka.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-vodopodgotovka.jpg);
+  background-size: cover;
+}
+.body--septiki {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-septiki.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-septiki.jpg);
+  background-size: cover;
+}
+.header {
+  width: 78.90625vw;
+  margin-top: 1.61458333vw;
+}
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header__section {
+  height: 1.97916667vw;
+}
+.logo-img,
+.slogan {
+  padding: 0px 0.78125vw;
+}
+.logo-img {
+  width: 7.8125vw;
+  height: 2.5vw;
+  border-right: 2px solid #ffffff;
+  padding-left: 0px;
+}
+.logo-img img {
+  width: 7.8125vw;
+}
+.business-info-text {
+  padding: 0px 1.04166667vw;
+}
+.business-info-text:last-of-type {
+  padding-right: 0px;
+}
+.burger {
+  display: none;
+}
+ul {
+  padding: 0px;
+}
+.header__menu {
+  width: 78.90625vw;
+  margin-top: 1.61458333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.main {
+  width: 78.90625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.main--prajs,
+.main--portfolio,
+.main--otzyvy {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.main--prajs {
+  margin-top: -7.8125vw;
+}
+.main--portfolio,
+.main--otzyvy {
+  margin-top: 2.60416667vw;
+}
+.main--post {
+  height: auto;
+  background-color: #ffffff;
+  padding: 2vw 10vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1.5vw 0px;
+}
+.img--post {
+  margin: 2vw 0px;
+  text-align: center;
+}
+.certificates {
+  width: 55.9375vw;
+}
+.certificate-img {
+  width: 11.875vw;
+}
+.certificate-img:hover {
+  opacity: 0.8;
+}
+.h1 {
+  margin-top: -10.41666667vw;
+}
+.h2 {
+  position: relative;
+  top: -3.64583333vw;
+}
+.h2--price {
+  margin-top: -7vw;
+}
+.h2--portfolio,
+.h2--otzyvy {
+  margin-top: -7vw;
+}
+.main__button {
+  position: relative;
+  top: 7.8125vw;
+}
+.main__button:before {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(white));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), white);
+  height: 3.4vw;
+  width: 1.5vw;
+  position: absolute;
+  opacity: 1;
+  top: 0px;
+  left: 2.2vw;
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  -webkit-animation: animated-button 5.5s ease-in-out infinite;
+  animation: animated-button 5.5s ease-in-out infinite;
+}
+.price {
+  background-image: url(../images/fon-prajs.png);
+  background-size: cover;
+  width: 78.90625vw;
+  height: 32.29166667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.price-table {
+  width: 33.85416667vw;
+  margin-top: -4vw;
+}
+.price-table .caption {
+  height: 7.8125vw;
+}
+.price-table td:nth-child(even) {
+  text-align: right;
+}
+.video {
+  width: 78.90625vw;
+  height: 25.9375vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.single-clip {
+  width: 17.1875vw;
+  height: 10.67708333vw;
+  background-color: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.single-clip iframe {
+  width: 17.1875vw;
+  height: 10.67708333vw;
+  border: 0.10416667vw solid #ffffff;
+}
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.61458333vw;
+}
+@media (max-width: 480px) {
+  @-webkit-keyframes animated-button {
+    0% {
+      left: 10vw;
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    20% {
+      left: 69vw;
+      opacity: 0;
+    }
+    100% {
+      left: 69vw;
+      opacity: 0;
+    }
+  }
+  @keyframes animated-button {
+    0% {
+      left: 10vw;
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    20% {
+      left: 69vw;
+      opacity: 0;
+    }
+    100% {
+      left: 69vw;
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes animated-next-button {
+    0% {
+      left: 10vw;
+      opacity: 1;
+    }
+    100% {
+      left: 49.5vw;
+      opacity: 0;
+    }
+  }
+  @keyframes animated-next-button {
+    0% {
+      left: 10vw;
+      opacity: 1;
+    }
+    100% {
+      left: 49.5vw;
+      opacity: 0;
+    }
+  }
+  body {
+    width: 100vw;
+    height: 155vh;
+  }
+  .button {
+    width: 86.66666667vw;
+    height: 16.53333333vw;
+    border-radius: 4.26666667vw;
+  }
+  .body--glavnaya,
+  .body--prajs,
+  .body--portfolio,
+  .body--otzyvy {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-glavnaya-mob.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-glavnaya-mob.png);
+    background-size: 100% 105%;
+  }
+  .body--otoplenie {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-otoplenie-mob.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-otoplenie-mob.png);
+    background-size: 100% 110%;
+  }
+  .body--skvazhiny {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-skvazhiny-mob.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-skvazhiny-mob.png);
+    background-size: 100% 110%;
+  }
+  .body--vodopodgotovka {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-vodopodgotovka-mob.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-vodopodgotovka-mob.png);
+    background-size: 100% 110%;
+  }
+  .body--septiki {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/fon-septiki-mob.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/fon-septiki-mob.png);
+    background-size: 100% 110%;
+  }
+  .header {
+    width: 86.66666667vw;
+    margin-top: 5.33333333vw;
+  }
+  .header__section {
+    height: 5.33333333vw;
+  }
+  .logo-img,
+  .slogan {
+    padding: 0px 1.33333333vw;
+  }
+  .logo-img {
+    width: 26.66666667vw;
+    height: 6vw;
+    border-right: 2px solid #ffffff;
+    padding-left: 0px;
+  }
+  .logo-img img {
+    width: 26.66666667vw;
+  }
+  .business-info {
+    display: none;
+  }
+  .burger {
+    display: block;
+    width: 8vw;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+  .header__menu {
+    display: none;
+  }
+  .main {
+    width: 86.66666667vw;
+    position: relative;
+    top: -20vw;
+  }
+  .main--glavnaya {
+    position: absolute;
+    top: 24vw;
+  }
+  .main--prajs {
+    margin-top: -40vw;
+  }
+  .main--portfolio,
+  .main--otzyvy {
+    margin-top: 2.60416667vw;
+  }
+  .our-advantages--quiz {
+    position: relative;
+    top: -30vw;
+  }
+  .our-advantages p {
+    margin: 0px;
+    width: 80vw;
+  }
+  .certificates {
+    width: 86.66666667vw;
+    height: 112vw;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 53vw;
+  }
+  .certificate-img {
+    width: 35.73333333vw;
+  }
+  .certificate-img:last-of-type {
+    margin-left: 25.46666667vw;
+  }
+  .h1 {
+    width: 69.86666667vw;
+    position: relative;
+    margin-top: 0px;
+    top: -40vw;
+  }
+  .h2 {
+    position: relative;
+    top: -3.64583333vw;
+  }
+  .main__button {
+    position: relative;
+    top: 13.33333333vw;
+  }
+  .main__button:before {
+    height: 16.53333333vw;
+    width: 7.68vw;
+    top: 0px;
+    left: 10vw;
+  }
+  .price {
+    width: 89.86666667vw;
+    height: 122.4vw;
+    margin-top: 7vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 4.26666667vw;
+  }
+  .h2--price {
+    margin-top: -50vw;
+  }
+  .h2--otzyvy,
+  .h2--portfolio {
+    margin-top: -88vw;
+  }
+  .price-table {
+    width: 85.33333333vw;
+    margin-top: 0vw;
+  }
+  .price-table .caption {
+    height: 8vw;
+  }
+  .price-table .caption--second {
+    display: none;
+  }
+  .price-table td:nth-child(even) {
+    text-align: right;
+  }
+  .price-table td {
+    padding: 1vw 0px;
+  }
+  .video {
+    width: 60vw;
+    height: 213.33333333vw;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: -75vw;
+  }
+  .single-clip {
+    width: 60vw;
+    height: 38.66666667vw;
+  }
+  .single-clip iframe {
+    width: 60vw;
+    height: 38.66666667vw;
+    border: 0.10416667vw solid #ffffff;
+  }
+  .single-clip:nth-child(6),
+  .single-clip:nth-child(7),
+  .single-clip:nth-child(8) {
+    display: none;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 5.33333333vw;
+  }
+  .footer p {
+    width: 85.33333333vw;
+    text-align: center;
+  }
+  .footer p:nth-child(2) {
+    display: none;
+  }
+  .mobile-menu {
+    width: 89.33333333vw;
+    height: 160vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background: rgba(36, 36, 36, 0.8);
+    margin-bottom: -30px;
+    border-radius: 8px;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .business-info--mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 26.66666667vw;
+  }
+}

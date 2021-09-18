@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <!--endbuild-->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--build:js js/main.min.js-->
+    <script src="../js/jquery.maskedinput.min.js"></script>
+    <script src="../js/dialog.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <!--endbuild-->
+    <title>Бурение скважин</title>
+</head>
+<body class="body--skvazhiny">
+    <div id="header" class="header">
+        <section class="section header__section">
+            <div class="section logo-block">
+                <div class="logo-img">
+                    <a href="../">
+                        <img src="../images/logo.png" alt="Компания Своток">
+                    </a>
+                </div>
+                <div class="slogan">
+                    Вода - <br>наш профиль
+                </div>
+            </div>
+            <div class="section business-info">
+                <div class="business-info-text"><a href="tel:+7-499-322-49-38">+7 499 322 49 38</a></div>
+                <div class="business-info-text"><a href="mailto:mail@svotok.ru">mail@svotok.ru</a></div>
+                <div class="business-info-text">Ежедневно c 9:00 до 21:00</div>
+            </div>
+            <div class="burger"><img src="../images/burger.png" alt=""></div>
+        </section>   
+        <nav>
+            <ul class="menu header__menu">
+                <li><a href="../">О нас</a></li>
+                <li><a href="../otoplenie">Монтаж отопления</a></li>
+                <li class="active">Бурение скважин</li>
+                <li><a href="../vodopodgotovka">Водоподготовка</a></li>
+                <li><a href="../septiki">Монтаж септиков</a></li>
+                <li><a href="../prajs">Прайс лист</a></li>
+                <li><a href="../portfolio">Портфолио</a></li>
+                <li><a href="../otzyvy">Отзывы</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main" class="main">
+        <h1 class="h1">
+                Точное соблюдение технологий – <br>высокий результат
+        </h1>
+        <section class="our-advantages">
+            <p>Новый подход к бурению.</p>
+            <p>В любом месте на любую глубину!</p>
+        </section>
+        <button id="start_button" class="button main__button">Рассчитать</button>
+    </main>
+    <div id="footer" class="footer">
+        <p>ООО «Своток» - Монтаж инженерных коммуникаций</p>
+        <p>Работаем с 1998 года</p>
+        <p id="privacy_policy_button" class="privacy-policy-button">Политика конфиденциальности</p>
+        <p>Сайт не является публичой офертой</p>
+    </div>
+	<template id="tmpl">
+        <div id="quiz_container" class="quiz-container">
+             <div class="quiz-page">
+                 <h2 class="h2--quiz">Выберите тип бурения</h2>
+                 <div class="answers-block">
+                     <figure class="figure">
+                         <img src="../images/malogabaritnaya-ustanovka.png" alt="Малогабаритной установкой">
+                         <figcaption>Малогабаритной установкой</figcaption>
+                     </figure>
+                     <figure class="figure">
+                         <img src="../images/artezianskaya.png" alt="Артезианская">
+                         <figcaption>Артезианская</figcaption>
+                     </figure>
+                     <figure class="figure">
+                         <img src="../images/na-pesok.png" alt="На песок">
+                         <figcaption>На песок</figcaption>
+                     </figure>
+                     <figure class="figure">
+                         <img src="../images/drugoe.png" alt="Нужна консультация">
+                         <figcaption>Нужна консультация</figcaption>
+                     </figure>
+                 </div>
+             </div>
+             <div class="quiz-page">
+                <h2 class="h2--quiz">Выберите материал обсадной трубы</h2>
+                <div class="answers-block">
+                    <figure class="figure">
+                        <img src="../images/metall.png" alt="Металл">
+                        <figcaption>Металл</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/plastik.png" alt="Пластик">
+                        <figcaption>Пластик</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/metalloplastik_2.png" alt="Металлопластик">
+                        <figcaption>Металлопластик</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/drugoe.png" alt="Нужна консультация">
+                        <figcaption>Нужна консультация</figcaption>
+                    </figure>
+                </div>
+            </div>
+             <div class="quiz-page quiz-page--input">
+                 <h2>Выберите планируемую глубину скважины</h2>
+                 <div class="answers-block answers-block--radio">
+                    <input type="radio" name="do40m" id="do40m"><label for="do40m" class="radio">До 40 м.</label>
+                    <input type="radio" name="40-90m" id="40-90m"><label for="40-90m" class="radio">40-90 м.</label>
+                    <input type="radio" name="90-130m" id="90-130m"><label for="90-130m" class="radio">90-130 м.</label>
+                    <input type="radio" name="bolee130m" id="bolee130m"><label for="bolee130m" class="radio">90-130 м.</label>
+                 </div>
+             </div>
+            <div class="quiz-page">
+                <h2 class="h2--skvazhiny">Выберите способ обустройства</h2>
+                <div class="answers-block answers-block--skvazhiny">
+                    <figure class="figure">
+                        <img src="../images/ne-trebuetsya.png" alt="Не требуется">
+                        <figcaption>Не требуется</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/kesson.png" alt="Кессон">
+                        <figcaption>Кессон</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/zhb-koltsa.png" alt="Ж/б кольца">
+                        <figcaption>Ж/б кольца</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/ogolovok.png" alt="Оголовок">
+                        <figcaption>Оголовок</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/adapter.png" alt="Адаптер">
+                        <figcaption>Адаптер</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/drugoe.png" alt="Нужна консультация">
+                        <figcaption>Нужна консультация</figcaption>
+                    </figure>
+                </div>
+            </div>
+             <form id="form" class="quiz-page quiz-page--form">
+                 <h2>Вы успешно прошли тест!</h2>
+                 <p class="p--big">
+                     Для подтверждения заказа оставьте телефон, мы закрепим за номером скидку 10% и вышлем расчет по СМС или на мессенджер.
+                 </p>
+                 <p class="p--small">
+                     Для более точного расчета стоимости и уточнения деталей в ближайшее время с вами свяжется наш специалист.
+                 </p>
+                 <input type="hidden" name="quiz" id="quiz" value="">
+                 <div class="input-container"><label for="name">Имя</label><input id="name" name="name" type="text" placeholder="Имя" class="input--form" pattern="^[а-яА-ЯёЁ]+$"></div>
+                 <div class="input-container"><label for="phone">Телефон</label><input required id="phone" name="phone" type="text" placeholder="Телефон" class="input--form"></div>
+                 <button id="submit_button" type="submit" class="button form__button">Готово</button>
+             </form>
+         </div>
+    </template>
+    <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		ym(56099752, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/56099752" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+</html>

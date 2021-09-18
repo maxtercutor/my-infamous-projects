@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <!--endbuild-->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--build:js js/main.min.js-->
+    <script src="../js/jquery.maskedinput.min.js"></script>
+    <script src="../js/dialog.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <!--endbuild-->
+    <title>Монтаж отопления</title>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		ym(56099620, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/56099620" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+<body class="body--otoplenie">
+    <div id="header" class="header">
+        <section class="section header__section">
+            <div class="section logo-block">
+                <div class="logo-img">
+                    <a href="../">
+                        <img src="../images/logo.png" alt="Компания Своток">
+                    </a>
+                </div>
+                <div class="slogan">
+                    Вода - <br>наш профиль
+                </div>
+            </div>
+            <div class="section business-info">
+                <div class="business-info-text"><a href="tel:+7-499-322-49-38">+7 499 322 49 38</a></div>
+                <div class="business-info-text"><a href="mailto:mail@svotok.ru">mail@svotok.ru</a></div>
+                <div class="business-info-text">Ежедневно c 9:00 до 21:00</div>
+            </div>
+            <div class="burger"><img src="../images/burger.png" alt=""></div>
+        </section>   
+        <nav>
+            <ul class="menu header__menu">
+                <li><a href="../">О нас</a></li>
+                <li class="active">Монтаж отопления</li>
+                <li><a href="../skvazhiny">Бурение скважин</a></li>
+                <li><a href="../vodopodgotovka">Водоподготовка</a></li>
+                <li><a href="../septiki">Монтаж септиков</a></li>
+                <li><a href="../prajs">Прайс лист</a></li>
+                <li><a href="../portfolio">Портфолио</a></li>
+                <li><a href="../otzyvy">Отзывы</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main" class="main">
+        <h1 class="h1">
+            Сделаем ваш дом тёплым <br>и энергоэффективным
+        </h1>
+        <section class="our-advantages our-advantages--quiz">
+            <p>Комплексный и частичный монтаж отопления.</p>
+            <p>Проектирование, гарантия и обслуживание.</p>
+        </section>
+        <button id="start_button" class="button main__button">Рассчитать</button>
+    </main>
+    <div id="footer" class="footer">
+        <p>ООО «Своток» - Монтаж инженерных коммуникаций</p>
+        <p>Работаем с 1998 года</p>
+        <p id="privacy_policy_button" class="privacy-policy-button">Политика конфиденциальности</p>
+        <p>Сайт не является публичой офертой</p>
+    </div>
+    <template id="tmpl">
+            <div id="quiz_container" class="quiz-container">
+                 <div class="quiz-page">
+                     <h2 class="h2--quiz">Какой вид топлива планируете использовать?</h2>
+                     <div class="answers-block">
+                         <figure class="figure">
+                             <img class="img" src="../images/elektrichestvo.png" alt="Электричество">
+                             <figcaption>Электричество</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img class="img" src="../images/gaz.png" alt="Газ">
+                             <figcaption>Газ</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img class="img" src="../images/tverdoe-toplivo.png" alt="Твердое топливо">
+                             <figcaption>Твердое топливо</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img src="../images/chastichnyj-montazh.png" alt="Нужен частичный монтаж">
+                             <figcaption>Нужен частичный монтаж</figcaption>
+                         </figure>
+                     </div>
+                 </div>
+                 <div class="quiz-page quiz-page--max">
+                     <h3 class="h3--quiz">Выберите элементы отопления которые нужно установить</h3>
+                         <h3 class="h3--quiz">Можно несколько</h3>
+                     <div class="answers-block answers-block--max">
+                         <figure class="figure--max">
+                             <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/kotel.png" alt="Котел">
+                             <figcaption>Котел</figcaption>
+                         </figure>
+                         <figure class="figure--max">
+                            <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/radiator.png" alt="Радиатор">
+                             <figcaption>Радиатор</figcaption>
+                         </figure>
+                         <figure class="figure--max">
+                            <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/tsirkulyatsionnyj-nasos.png" alt="Циркуляционный насос">
+                             <figcaption>Циркуляционный насос</figcaption>
+                         </figure>
+                         <figure class="figure--max">
+                            <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/razvodka-truboprovoda.png" alt="Разводка трубопровода">
+                             <figcaption>Разводка трубопровода</figcaption>
+                         </figure>
+                         <figure class="figure--max">
+                            <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/armatura.png" alt="Арматура">
+                             <figcaption>Арматура</figcaption>
+                         </figure>
+                         <figure class="figure--max">
+                            <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/raspredelitelnyj-kollektor.png" alt="Распределительный коллектор">
+                             <figcaption>Распределительный коллектор</figcaption>
+                         </figure>
+                         <figure class="figure--max">
+                            <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/teplyj-pol.png" alt="Теплый пол">
+                             <figcaption>Теплый пол</figcaption>
+                         </figure>
+                         <figure class="figure--max">
+                            <div class="checked"><img src="../images/checked.png" alt=""></div>
+                             <img class="check-box" src="../images/drugoe.png" alt="Другое">
+                             <figcaption>Другое</figcaption>
+                         </figure>
+                     </div>
+                     <button id="get_options_button" class="button next-button"><div class="before"></div>Выбрать</button>
+                 </div>
+                 <div class="quiz-page">
+                     <h2 class="h2--quiz">Какие элементы отопления планируете использовать?</h2>
+                     <div class="answers-block">
+                         <figure class="figure">
+                             <img src="../images/radiatory.png" alt="Радиаторы">
+                             <figcaption>Радиаторы</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img src="../images/teplyj-pol.png" alt="Теплый пол">
+                             <figcaption>Теплый пол</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img src="../images/kombinirovannoe.png" alt="Комбинированное">
+                             <figcaption>Комбинированное</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img src="../images/drugoe.png" alt="Нужна консультация">
+                             <figcaption>Нужна консультация</figcaption>
+                         </figure>
+                     </div>
+                 </div>
+                 <div class="quiz-page">
+                     <h2 class="h2--quiz">Выберите вид труб системы</h2>
+                     <div class="answers-block">
+                         <figure class="figure">
+                             <img src="../images/metalloplastik_1.png" alt="Металлопластик">
+                             <figcaption>Металлопластик</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img src="../images/sshityj-polietilen.png" alt="Сшитый полиэтилен">
+                             <figcaption>Сшитый полиэтилен</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img src="../images/polipropilen.png" alt="Полипропилен">
+                             <figcaption>Полипропилен</figcaption>
+                         </figure>
+                         <figure class="figure">
+                             <img src="../images/drugoe.png" alt="Нужна консультация">
+                             <figcaption>Нужна консультация</figcaption>
+                         </figure>
+                     </div>
+                 </div>
+                 <div class="quiz-page quiz-page--input">
+                     <h2>Укажите количество окон в доме</h2>
+                     <div class="answer-block">
+                         <input type="text" class="input--quiz">
+                     </div>
+                     <button class="button next-button next-button--input">Далее</button>
+                    </div> 
+         
+                 <div class="quiz-page quiz-page--input">
+                     <h2>Укажите планируемую площадь отопления м2</h2>
+                     <div class="answer-block">
+                         <input type="text" class="input--quiz">
+                     </div>
+                     <button class="button next-button next-button--input">Далее</button>
+                 </div>
+                 <form id="form" class="quiz-page quiz-page--form">
+                     <h2>Вы успешно прошли тест!</h2>
+                     <p class="p--big">
+                         Для подтверждения заказа оставьте телефон, мы закрепим за номером скидку 10% и вышлем расчет по СМС или на мессенджер.
+                     </p>
+                     <p class="p--small">
+                         Для более точного расчета стоимости и уточнения деталей в ближайшее время с вами свяжется наш специалист.
+                     </p>
+                     <input type="hidden" name="quiz" id="quiz" value="">
+                     <div class="input-container"><label for="name">Имя</label><input id="name" name="name" type="text" placeholder="Имя" class="input--form" pattern="^[а-яА-ЯёЁ]+$"></div>
+                     <div class="input-container"><label for="phone">Телефон</label><input required id="phone" name="phone" type="text" placeholder="Телефон" class="input--form"></div>
+                     <button id="submit_button" type="submit" class="button form__button">Готово</button>
+                 </form>
+             </div>
+    </template>
+</body>
+</html>
