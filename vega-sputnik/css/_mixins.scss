@@ -1,0 +1,15 @@
+@mixin maxWidth($value) {
+    max-width: ($value/375px)*100vw;
+}
+@mixin width ($value) {
+    width: ($value/375px)*100vw;
+}
+@mixin height ($value) {
+    height: ($value/375px)*100vw;
+}
+@mixin marginTop($value) {
+    margin-top: ($value/375px)*100vw;
+}
+@mixin lineHeight ($value) {
+    line-height: ($value/375px)*100vw;
+}

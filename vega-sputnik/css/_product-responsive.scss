@@ -1,0 +1,120 @@
+@media (max-width: 1200px) {
+    .product {
+        padding: (24px/375px)*100vw 0 (32px/375px)*100vw;
+
+        .container {
+            padding: 0;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+        @include lineHeight(21px);
+        
+        span {
+            font-size: 1.2rem;
+            @include lineHeight(18px);
+        }
+        }
+
+        &__header {
+            margin-bottom: (16px/375px)*100vw;
+        }
+        
+            &__content {
+                flex-direction: column;
+            }
+        
+            &__image {
+                @include width(345px);
+                @include height(280px);
+            }
+        
+            &__big-images {
+                @include width(345px);
+                @include height(230px);
+
+            }
+
+            &__big-image {
+                @include width(345px);
+            }
+        
+            &__mini-images {
+                @include width(140px);
+                
+                margin: (8px/375px)*100vw auto 0;
+            }
+        
+            &__mini-image {
+                @include width(64px);
+            }
+        
+        
+            &__info {
+                @include width(345px);
+               height: auto;
+                @include marginTop(16px);
+        
+                h2 {
+                    font-size: 1.4rem;
+        @include lineHeight(27px);
+        
+        margin-bottom: (8px/375px*100vw);
+                }
+        
+                p {
+                    
+        font-size: 1.2rem;
+        @include lineHeight(21px);
+        
+                }
+            }
+        
+            &__footer {
+                
+        
+                @include marginTop(16px);
+        
+            }
+
+            &__footer-content {
+                width: 100%;
+                flex-direction: column;
+            }
+        
+            &__price {
+                @include width(345px);
+                
+        
+                p.text {
+                    
+        
+        @include lineHeight(27px);
+        
+                }
+        
+                p.value {
+                    
+                    @include lineHeight(27px);
+        
+                }
+            }
+
+        
+            &__button {
+                @include width(345px);
+               @include height(42px);
+                
+        font-size: 1.8rem;
+        @include lineHeight(21px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include marginTop(16px);
+        
+            }
+        }
+        
+}

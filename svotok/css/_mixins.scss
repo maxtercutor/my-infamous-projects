@@ -1,0 +1,15 @@
+@mixin fontStyle($fontSize, $lineHeight, $fontWeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+}
+%flex-basic {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

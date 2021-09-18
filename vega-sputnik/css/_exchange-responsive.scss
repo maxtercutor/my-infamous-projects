@@ -1,0 +1,62 @@
+@media (max-width: 1200px) {
+    .exchange {
+        padding: (24px/375px)*100vw 0 (32px/375px)*100vw;
+
+        @include marginTop(40px);
+
+        .container {
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            @include lineHeight(27px);
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            @include lineHeight(21px);
+        }
+        h3.red {
+            @include marginTop(24px);
+            margin-bottom: (24px/375px)*100vw;
+        }
+    
+        h4 {
+            font-size: 1.4rem;
+            @include lineHeight(16px);
+
+@include marginTop(16px);
+        }
+        p {
+            font-size: 1.4rem;
+            @include lineHeight(21px);
+    
+        }
+        &__action {
+            @include marginTop(16px);
+    
+            h3 {
+                @include marginTop(16px);
+            }
+        }
+    
+        &__item {
+            @include marginTop(16px);
+        }
+    
+    
+        &__list {
+            padding-left: 0;
+            @include marginTop(8px);
+    
+    li {
+        
+    font-size: 1.4rem;
+    @include lineHeight(21px);
+    
+    }
+    
+        }
+    }
+}

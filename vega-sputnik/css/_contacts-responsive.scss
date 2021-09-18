@@ -1,0 +1,77 @@
+@media (max-width: 1200px) {
+    .contacts {
+        padding: (24px/375px)*100vw 0 (32px/375px)*100vw;
+
+        margin-top: (40px/375px)*100vw;
+
+        overflow-x: hidden;
+
+        .container {
+            padding: 0;
+        }
+
+        p {
+            
+            font-size: 1.8rem;
+            @include lineHeight(27px);
+    
+    
+        }
+    
+        &__content {
+           flex-direction: column;
+        }
+    
+    
+        &__info {
+            h1 {
+                font-size: 1.8rem;
+                @include lineHeight(27px);
+                margin-top: 0;
+            }
+            
+            h4 {
+                font-size: 1.8rem;
+                @include lineHeight(27px);
+            }
+        }
+    
+        &__phones {
+            @include marginTop(24px);
+        }
+    
+        &__phones a {
+            
+    font-size: 3.6rem;
+                @include lineHeight(40px);
+    
+    
+                @include marginTop(16px);
+        }
+    
+        &__time,
+        &__address,
+        &__mail {
+            @include marginTop(16px);
+        }
+    
+        &__map {
+           max-width: 100vw;
+           height: 400px;
+
+           position: relative;
+           left: -3vw;
+           
+           @include marginTop(24px);
+        }
+    
+        &__footer {
+    
+            @include marginTop(24px);
+            p.light {
+                font-size: 1.6rem;
+                @include lineHeight(27px);
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    @extend %flex-center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffdd2d;
+
+    @include fontStyle(1.4rem, 80px, 700);
+    color: #383838;
+}
+.banner {
+    background-color: #fff8f2;
+}
+.banner--top {
+    padding-bottom: 0;
+}
+.banner--bottom {
+    padding-top: 0;
+}

@@ -1,0 +1,49 @@
+div.owl-dots {
+    position: absolute;
+    width: 100%;
+    
+    text-align: center;
+}
+button.owl-dot {
+    width: (10px/375px)*100vw;
+    height: (10px/375px)*100vw;
+    
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 3px;
+
+    outline: none;
+}
+button.owl-dot.active {
+    background: #C4C4C4;
+}
+
+ 
+#sliderCarousel div.owl-dots {
+    
+    bottom: (10px/375px)*100vw;
+  }
+  #sliderCarousel.owl-carousel button.owl-dot,
+  #worksCarousel.owl-carousel button.owl-dot {
+    
+    border: 1px solid #ffffff;
+  
+  }
+
+  
+  #complectsCarousel div.owl-dots {
+    
+    bottom: (-20px/375px)*100vw;
+    
+  }
+  #complectsCarousel.owl-carousel button.owl-dot,
+  #priceCarousel.owl-carousel button.owl-dot {
+    
+    border: 1px solid #C4C4C4;
+  }
+
+  #worksCarousel.owl-carousel div.owl-dots {
+    top: (194px/375px)*100vw;
+  }
+
+  

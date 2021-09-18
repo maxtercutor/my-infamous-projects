@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обмен приёмного оборудования</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/form.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__logo"><a href="#"><img src="./assets/images/logo.png" alt=""></a></div>
+                <div class="header__info">
+                    <div class="header__time">пн-пт: с 9 до 18, сб: с 9 до 15</div>
+                    <div class="header__phone"><a href="tel:8-912-019-55-55">8 912 019 55 55</a></div>
+                    <div class="header__phone"><a href="tel:8-34147-4-42-82">8 34147 4 42 82</a></div>
+                    <div class="header__callback" data-toggle="modal" data-target="#modalForm"><img src="./assets/images/callback.png" alt=""></div>
+                </div>
+                <div class="header__mobile">
+                    <div class="header__mobile-phone"><a href="tel:8-912-019-55-55"><img src="./assets/images/phone.png" alt=""></a></div>
+                    <div class="header__mobile-pointer" data-toggle="modal" data-target="#modalMap"><img src="./assets/images/pointer.png" alt=""></div>
+                    <div class="header__mobile-mail"><a href="mailto:kf-vega@yandex.ru"><img src="./assets/images/mail.png" alt=""></a></div>
+                    <div class="header__mobile-clock"><img src="./assets/images/clock.png" alt=""></div>
+                    <div id="burger" class="burger">
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="header__bottom">
+            <div class="container">
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="./">Главная</a></li>
+                        <li><a href="./complects.html">Комплекты </a></li>
+                        <li><a href="./price.html">Цены</a></li>
+                        <li><a href="./internet.html">Интернет</a></li>
+                        <li><a href="./contacts.html">Контакты</a></li>
+                        <li><a href="./exchange.html" class="active">Обмен приёмников</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="exchange">
+        <div class="container">
+            <h1>Обмен приёмного оборудования</h1>
+            <div class="exchange__banner"><img src="./assets/images/banner-3.png" alt=""></div>
+            <div class="exchange__action">
+                <h3><span class="red">АКЦИЯ: </span>Обмен приёмного оборудования</h3>
+                <p><span class="blue">Внимание: </span>При заказе обмена доставка и установка оборудования - <span class="blue">БЕСПЛАТНО. </span>Цена обмена 1800 рублей</p>
+                <p><span class="blue">Дополнительная информация: </span>Если вы хотите обменять оборудования заказывайте заранее за несколько дней<br>Все деньги со старого приемника будут перенесены на новый!</p>
+                <div class="exchange__item">
+                    <p>При заказе обмена оборудования у нас вы получаете бесплатную доставка и настройку оборудования. Давно планировали обменять оборудование? Не откладывайте на потом! Обменяйте устаревший приёмник на новый, с поддержкой HD! </p>
+                    <p>Обменяйте оборудование и наслаждайтесь просмотром более 200 разножанровых каналов пакета «Единый», в том числе в формате высокой четкости HD!</p>
+                    <p>Услуги «Триколор ТВ», срок действия которых на момент обмена не истёк, будут перенесены на новое оборудование. </p>
+                </div>
+                <div class="exchange__item">
+                    <details>
+                        <summary><h4 class="red">Оборудование, участвующее в акции:</h4></summary>
+                        <ul class="exchange__list">
+                            <li>- CAM-NC1,</li>
+                            <li>- CAM-DRE (MPEG-2),</li>
+                            <li>- CAM-DRE (MPEG-4) (за исключением приёмного оборудования со смарт-картами вида XX12XXXXXXXX),</li>
+                            <li>- DRE-4000,</li>
+                            <li>- DRE-5000,</li>
+                            <li>- DRS-5001,</li>
+                            <li>- DRS 5003,</li>
+                            <li>- DRE-7300</li>
+                            <li>- GS-7300,</li>
+                            <li>- GS 8306,</li>
+                            <li>- GS 8305,</li>
+                            <li>- DRS 8305,</li>
+                            <li>- Dongle DRE Crypt.</li>
+                        </ul>
+                        <p>В комплекте со смарт-картами (при условии, что оборудование комплектовалось смарт-картой).</p>
+                    </details>
+                </div>
+                <div class="exchange__item">
+                    <details>
+                        <summary><h4 class="red">В обмен на старое оборудование вы получите:</h4></summary>
+                        <ul class="exchange__list exchange__list--min">
+                            <li> - цифровой спутниковый приёмник GS B532M HD. </li>
+                            <li>- смарт-карту с включенным просмотром на 31 день телеканалов пакета «Единый».</li>
+                        </ul>
+                        <p>К обмену принимается зарегистрированное оборудование в рабочем состоянии, с определяемым ID. Оборудование с ID вида хх11хххххххх, ранее не проходившее регистрацию, к обмену не принимается.</p>
+                        <p class="blue">К участию в акции не допускаются действующие участники акций «Триколор Кредит».</p>
+                    </details>
+                </div>
+                <div class="exchange__item">
+                    <details>
+                        <summary><h4 class="red">При обмене на два телевизора вы получите:</h4></summary>
+                        <ul class="exchange__list exchange__list--min">
+                            <li>- cистему для приёма цифрового спутникового телевидения GS E532M/GS C502;</li>
+                            <li>- смарт-карту с включенным просмотром на 31 день телеканалов пакета «Единый»;</li>
+                            <li>- Конвертер спутниковый круговой с двумя выходами;</li>
+                            <li>- ИК-приемник внешний LF-DX8 – 2 шт;</li>
+                        </ul>
+                        <p class="blue">К участию в Акции не допускаются действующие участники акций «Триколор Кредит», «Триколор Кредит: второй этап», «Второй приёмник в дом в рассрочку».</p>
+                        <p>Вы так же можете оформить заявку на выезд мастера к Вам на дом для оформления документов или подключения оборудования БЕСПЛАТНО</p>
+                    </details>
+                </div>
+                <h3 class="red">С 1 января 2020 Г. МЫ ЗАПУСКАЕМ АКЦИЮ «ОБМЕН ОБОРУДОВАНИЯ СТОРОННИХ ОПЕРАТОРОВ СПУТНИКОВОГО ТЕЛЕВИДЕНИЯ НА «ТРИКОЛОР ТВ».</h3>
+                <p>Состав принимаемого оборудования: Работоспособный приемник из списка (со шнуром питания или блоком питания) + «Карта Доступа Оператора». </p>
+                <p>NTV-PLUS 1 HD VA, Opentech OHS1740V, Humax VAHD-3100S (HD), Thomson DSI-8020NTV, Intek HD-S10VA0P, Humax VHDR-3000S, Humax VA-5SD, Sagemcom DSI74 HD, Sagemcom DSI87 HD, Humax VA-4SD </p>
+                <p>Сдайте любое оборудования из списка, и получите специальную цену на комплекты с современным приемником GS В531M/GS В532M со встроенной памятью 8Гб + карта активации за 5 900 руб.</p>
+            </div>
+            <div id="priceCarousel" class="price__items price__items--exc">
+                <div class="price__item">
+                    <div class="price__img"><img src="./assets/images/image-23.png" alt=""></div>
+                    <div class="price__info">
+                        <h3 class="info-ttl"><span class="blue">Обмен приемника B534N (B531N)</span> — 5 900 руб.</h3>
+                        <p>Цена полностью с установкой.</p>
+                        <p>В комплект входит все необходимое оборудование.</p>
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__img"><img src="./assets/images/image-21.png" alt=""></div>
+                    <div class="price__info">
+                        <h3 class="info-ttl"><span class="blue">Обмен приемника EVO-09</span> — 7 490 руб.</h3>
+                        <p>Цена полностью с установкой.</p>
+                        <p>В комплект входит все необходимое оборудование.</p>
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__img"><img src="./assets/images/image-14.png" alt=""></div>
+                    <div class="price__info">
+                        <h3 class="info-ttl"><span class="blue">Обмен приемника МТС</span> — 4 500 руб.</h3>
+                        <p>Цена полностью с установкой.</p>
+                        <p>В комплект входит все необходимое оборудование.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__logo"><img src="./assets/images/logo.png" alt=""></div>
+                <p>Установка спутникового ТВ и интернета</p>
+            </div>
+            <div class="footer__center">
+                <div class="footer__mail">
+                    <a href="mailto:kf-vega@yandex.ru">
+                        <div class="footer__mail-img"><img src="./assets/images/mail.png" alt=""></div>
+                        <p>kf-vega@yandex.ru</p>
+                    </a>
+                </div>
+                <div class="footer__pointer">
+                    <div class="footer__pointer-img"><img src="./assets/images/pointer.png" alt=""></div>
+                    <p>г. Сарапул, ул. Горького , д. 3</p>
+                </div>
+                <div class="footer__copyright">
+                    <p>© Все права защищены, 2020</p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__phone">
+                    <a href="tel:8-912-019-55-55">
+                        <div class="footer__phone-img"><img src="./assets/images/phone.png" alt=""></div>
+                        <p>8 912 019 55 55&nbsp;&nbsp;8 34147 4 42 82</p>
+                    </a>
+                </div>
+                <div class="footer__clock">
+                    <div class="footer__clock-img"><img src="./assets/images/clock.png" alt=""></div>
+                    <p>пн-пт: с 9 до 18, сб: с 9 до 15</p>
+                </div>
+                <div class="footer__callback" data-toggle="modal" data-target="#modalForm"><img src="./assets/images/callback.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <form class="modal-form">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="tel" name="phone" placeholder="Телефон">
+                <button type="submit" class="modal-form__submit">Отправить</button>
+            </form>
+        </div>
+        </div>
+    </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="modalMapLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A23011c79e4ee888bafb24e0029185c50e0bbcc31ff67a4cb8db0d30daa29d41b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+     <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="modalSuccess" 
+     aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h3 class="mt-4 mb-5 modal-title">Спасибо за вашу заявку</h3>
+                    <div class="mb-4">
+                        <p class="date"></p>
+                        <p>Наш менеджер свяжется с вами<br>в самое ближайшее время.</p>
+                    </div>
+                    <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                    data-dismiss="modal">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="modalError" 
+    aria-hidden="true">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-body text-center">
+                   <h3 class="mt-4 mb-5 modal-title">Извините, с отправкой письма <span>произошла ошибка</span>.<br>Попробуйте еще раз</h3>
+                   <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                    data-dismiss="modal">Ок</button>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+</html>

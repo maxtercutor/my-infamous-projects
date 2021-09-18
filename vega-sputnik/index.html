@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Установка спутников</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/form.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__logo"><a href="#"><img src="./assets/images/logo.png" alt=""></a></div>
+                <div class="header__info">
+                    <div class="header__time">пн-пт: с 9 до 18, сб: с 9 до 15</div>
+                    <div class="header__phone"><a href="tel:8-912-019-55-55">8 912 019 55 55</a></div>
+                    <div class="header__phone"><a href="tel:8-34147-4-42-82">8 34147 4 42 82</a></div>
+                    <div class="header__callback" data-toggle="modal" data-target="#modalForm"><img src="./assets/images/callback.png" alt=""></div>
+                </div>
+                <div class="header__mobile">
+                    <div class="header__mobile-phone"><a href="tel:8-912-019-55-55"><img src="./assets/images/phone.png" alt=""></a></div>
+                    <div class="header__mobile-pointer" data-toggle="modal" data-target="#modalMap"><img src="./assets/images/pointer.png" alt=""></div>
+                    <div class="header__mobile-mail"><a href="mailto:kf-vega@yandex.ru"><img src="./assets/images/mail.png" alt=""></a></div>
+                    <div class="header__mobile-clock"><img src="./assets/images/clock.png" alt=""></div>
+                    <div id="burger" class="burger">
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                        <div class="burger__item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="header__bottom">
+            <div class="container">
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="./" class="active">Главная</a></li>
+                        <li><a href="./complects.html">Комплекты </a></li>
+                        <li><a href="./price.html">Цены</a></li>
+                        <li><a href="./internet.html">Интернет</a></li>
+                        <li><a href="./contacts.html">Контакты</a></li>
+                        <li><a href="./exchange.html">Обмен приёмников</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="complects-banner">
+        <div class="container"><img src="./assets/images/banner-1.png" alt=""></div>
+    </div>
+    <section class="complects">
+        <div class="container container--main">
+            <h3 class="tricolol-ttl">Комплекты <span class="tc">ТРИКОЛОР</span><span class="tv">ТВ</span></h3>
+            <div id="complectsCarousel" class="complects__items row">
+                <div class="complects__item-wrapper col col-md-6 col-xl-4">
+                    <div class="complects__item">
+                        <div class="complects__img"><a href="./dts-54.html"><img src="./assets/images/image-1.png" alt=""></a></div>
+                        <h4><a href="./dts-54.html">Комплект Триколор ТВ DTS 54</a></h4>
+                        <div class="complects__price">
+                            <p class="text">С установкой за:</p>
+                            <p class="value">6 990 р</p>
+                        </div>
+                        <div class="complects__button complects__button--main" data-toggle="modal" data-target="#modalForm">Заказать</div>
+                    </div>
+                    <div class="complects__label complects__label--green">Новинка</div>
+                </div>
+                <div class="complects__item-wrapper col col-md-6 col-xl-4">
+                    <div class="complects__item">
+                        <div class="complects__img"><a href="./gs-b534m.html"><img src="./assets/images/image-2.png" alt=""></a></div>
+                        <h4><a href="./gs-b534m.html">Комплект Триколор GS B534M</a></h4>
+                        <div class="complects__price">
+                            <p class="text">С установкой за:</p>
+                            <p class="value">9 940 р</p>
+                        </div>
+                        <div class="complects__button complects__button--main" data-toggle="modal" data-target="#modalForm">Заказать</div>
+                    </div>
+                    <div class="complects__label complects__label--green">Новинка</div>
+                </div>
+                <div class="complects__item-wrapper col col-md-6 col-xl-4">
+                    <div class="complects__item">
+                        <div class="complects__img"><a href="./gs-b532m-c592.html"><img src="./assets/images/image-3.png" alt=""></a></div>
+                        <h4><a href="./gs-b532m-c592.html">Комплект Триколор GS B532M / C592</a></h4>
+                        <div class="complects__price">
+                            <p class="text">С установкой за:</p>
+                            <p class="value">11 990 р</p>
+                        </div>
+                        <div class="complects__button complects__button--main" data-toggle="modal" data-target="#modalForm">Заказать</div>
+                    </div>
+                    <div class="complects__label complects__label--yellow">На 2 TV</div>
+                </div>
+                <div class="complects__item-wrapper col col-md-6 col-xl-4">
+                    <div class="complects__item">
+                        <div class="complects__img"><a href="./gs-a230.html"><img src="./assets/images/image-4.png" alt=""></a></div>
+                        <h4><a href="./gs-a230.html">Комплект Триколор GS A230</a></h4>
+                        <div class="complects__price">
+                            <p class="text">С установкой за:</p>
+                            <p class="value">17 900 р</p>
+                        </div>
+                        <div class="complects__button complects__button--main" data-toggle="modal" data-target="#modalForm">Заказать</div>
+                    </div>
+                    <div class="complects__label complects__label--red">Скидка 10%</div>
+                </div>
+                <div class="complects__item-wrapper col col-md-6 col-xl-4">
+                    <div class="complects__item">
+                        <div class="complects__img"><a href="./modul-dostupa.html"><img src="./assets/images/image-5.png" alt=""></a></div>
+                        <h4><a href="./modul-dostupa.html">Модуль доступа Триколор</a></h4>
+                        <div class="complects__price">
+                            <p class="text">С установкой за:</p>
+                            <p class="value">7 900 р</p>
+                        </div>
+                        <div class="complects__button complects__button--main" data-toggle="modal" data-target="#modalForm">Заказать</div>
+                    </div>
+                    <div class="complects__label complects__label--yellow">На 2 TV</div>
+                </div>
+                <div class="complects__item-wrapper col col-md-6 col-xl-4">
+                    <div class="complects__item">
+                        <div class="complects__img"><a href="./gs-e502.html"><img src="./assets/images/image-6.png" alt=""></a></div>
+                        <h4><a href="./gs-e502.html">Комплект Триколор GS E502</a></h4>
+                        <div class="complects__price">
+                            <p class="text">С установкой за:</p>
+                            <p class="value">17 900 р</p>
+                        </div>
+                        <div class="complects__button complects__button--main" data-toggle="modal" data-target="#modalForm">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="complects__button-mobile" data-toggle="modal" data-target="#modalForm">Заказать</div>
+        </div>
+    </section>
+    <div class="form">
+        <div class="container">
+            <div class="form__list">
+                <h2>Подключиться уже сейчас</h2>
+                <ul>
+                    <li>- Чёткий сигнал без помех в любую погоду</li>
+                    <li>- Поддержка форматов Full HD и 4К</li>
+                    <li>- Установка осуществляется быстро и качественно</li>
+                    <li>- Цена доступна каждому</li>
+                    <li>- Выезд специалиста на дом бесплатный</li>
+                    <li>- В распоряжении более 223 каналов</li>
+                    <li>- Можно установить на несколько телевизоров</li>
+                </ul>
+            </div>
+            <form>
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phone" placeholder="Телефон">
+                <input type="text" name="address" placeholder="Адрес">
+                <input type="text" name="date" placeholder="Желаемая дата подключения">
+                <button type="submit" class="form__submit">Оправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="container">
+            <h2>Наши работы</h2>
+            <div id="sliderPoster" class="slider__poster"><img src="/assets/images/slider-image-7.jpg" alt=""></div>
+            <div id="sliderCarousel" class="slider__carousel">
+                <div class="slider__item slider__item--1"></div>
+                <div class="slider__item slider__item--2"></div>
+                <div class="slider__item slider__item--3"></div>
+                <div class="slider__item slider__item--4"></div>
+                <div class="slider__item slider__item--5"></div>
+                <div class="slider__item slider__item--6"></div>
+                <div class="slider__item slider__item--7"></div>
+                <div class="slider__item slider__item--8"></div>
+                <div class="slider__item slider__item--9"></div>
+                <div class="slider__item slider__item--10"></div>
+            </div>
+        </div>
+    </div>
+    <section class="offer">
+        <div class="container">
+            <h2><span class="tc">ТРИКОЛОР</span><span class="tv">ТВ</span> от официального дилера!</h2>
+            <div class="offer__text">
+                <p>Если раньше просмотр спутникового телевидения был чем-то ограничен, то сейчас все ограничения сняты! Благодаря широкому выбору оборудования, огромному множеству вариантов комплектации и улучшенным параметрам передачи и приёма сигнала, получать удовольствие от просмотра телевизионных каналов стало проще. </p>
+                <p>Многообразие выбора обеспечивается компаниями, предлагающими свои услуги:</p>
+                <p><span class="bold">- Спутниковое телевидение - Триколор ТВ</span><br>На выбор имеется множество разных пакетов, подходящих для всей семьи, любителей спорта, а также отдельно для детей и взрослых. Именно "Триколор" предлагает доступные условия сотрудничества, возможность замены устаревшего оборудования на новое и многие другие преимущества.</p>
+                <p><span class="bold">- Спутниковое телевидение - Телекарта</span><br>Более 200 каналов демонстрируются в отличном качестве - их можно смотреть не только на телевизоре, но и на телефоне и планшете.</p>
+                <p><span class="bold">- Спутниковое телевидение - МТС ТВ</span><br>Известная компания предлагает универсальные решения, различные пакеты и удобную комплектацию для простой установки практически в любом месте. Оплатить телевидение можно как на месяц, так и на год вперед.</p>
+                <p>Кроме этого, рационально сейчас сделать выбор в том числе и в пользу <span class="bold">цифрового эфирного телевидения</span> - это действительно инновация!</p>
+                <p>Если Вы решили <span class="bold">подключить спутниковое телевидение</span>, но еще не решили какой комплект Вам больше всего подойдет, то специалисты нашей компании дадут консультацию в выборе комплекта спутникового тв, связаться с нами можно по телефонам указанным в разделе контакты.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__logo"><img src="./assets/images/logo.png" alt=""></div>
+                <p>Установка спутникового ТВ и интернета</p>
+            </div>
+            <div class="footer__center">
+                <div class="footer__mail">
+                    <a href="mailto:kf-vega@yandex.ru">
+                        <div class="footer__mail-img"><img src="./assets/images/mail.png" alt=""></div>
+                        <p>kf-vega@yandex.ru</p>
+                    </a>
+                </div>
+                <div class="footer__pointer">
+                    <div class="footer__pointer-img"><img src="./assets/images/pointer.png" alt=""></div>
+                    <p>г. Сарапул, ул. Горького , д. 3</p>
+                </div>
+                <div class="footer__copyright">
+                    <p>© Все права защищены, 2020</p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__phone">
+                    <a href="tel:8-912-019-55-55">
+                        <div class="footer__phone-img"><img src="./assets/images/phone.png" alt=""></div>
+                        <p>8 912 019 55 55&nbsp;&nbsp;8 34147 4 42 82</p>
+                    </a>
+                </div>
+                <div class="footer__clock">
+                    <div class="footer__clock-img"><img src="./assets/images/clock.png" alt=""></div>
+                    <p>пн-пт: с 9 до 18, сб: с 9 до 15</p>
+                </div>
+                <div class="footer__callback" data-toggle="modal" data-target="#modalForm"><img src="./assets/images/callback.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+	<!-- Modal -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <form class="modal-form">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="tel" name="phone" placeholder="Телефон">
+                <button type="submit" class="modal-form__submit">Отправить</button>
+            </form>
+        </div>
+        </div>
+    </div>
+	<!-- Modal -->
+	<div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="modalMapLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A23011c79e4ee888bafb24e0029185c50e0bbcc31ff67a4cb8db0d30daa29d41b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="modalSuccess" 
+  aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-body text-center">
+                 <h3 class="mt-4 mb-5 modal-title">Спасибо за вашу заявку</h3>
+                 <div class="mb-4">
+                     <p class="date"></p>
+                     <p>Наш менеджер свяжется с вами<br>в самое ближайшее время.</p>
+                 </div>
+                 <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                 data-dismiss="modal">Ок</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- Modal -->
+ <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="modalError" 
+ aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h3 class="mt-4 mb-5 modal-title">Извините, с отправкой письма <span>произошла ошибка</span>.<br>Попробуйте еще раз</h3>
+                <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                 data-dismiss="modal">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
