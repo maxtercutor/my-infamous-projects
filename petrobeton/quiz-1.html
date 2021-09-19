@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <!--<link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/swiper.js" defer></script>
+    <!--<script src="./assets/js/vendor.js" defer></script>-->
+    <!--<script src="./assets/js/jquery.fancybox.min.js"></script>-->
+    <script src="./assets/js/quiz.js" defer></script>
+    <script src="./assets/js/test.js" defer></script>
+</head>
+<body>
+
+		<form action="#" id="quiz" class="quiz">		
+				
+			    <input type="hidden" name="current_page" value="">
+				<input type="hidden" name="DATA[CURRENT_PAGE]" value="">
+				<input type="hidden" name="DATA[TITLE]" value="">
+				
+                <div class="quiz__item current">
+                    <div>
+                        <div class="quiz__header">
+                            <p>Расчет стоимости комплекта</p>
+                        </div>
+                        <div class="quiz__title">
+							<p class="quiz__count">1<span>из 9</span></p>
+							<p class="quiz__question">Тип комплекта</p>
+                        </div>
+						<input type="hidden" name="DATA[QUESTION_1]" value="Тип комплекта:">
+                    </div>
+                    
+					<div class="quiz__answers quiz__answers--image quiz__answers--image2">
+                        <div class="quiz__answer quiz__answer--image2">
+						                            
+                            <input class="quiz__answer-input" type="radio" name="answer1" id="input1" value="Напольный"><label for="input1">Напольный</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-1.jpg" alt="">
+                        </div>
+                        <div class="quiz__answer quiz__answer--image2">
+												
+                            <input class="quiz__answer-input" type="radio" name="answer1" id="input2" value="Подвесной"><label for="input2">Подвесной</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-2.jpg" alt="">
+                        </div>
+                        
+         
+						<input type="hidden" name="DATA[ANSWER_1]" value="" class="answer-hidden">
+					</div>
+					
+                    <div class="button button--dark quiz__button">далее</div>
+                </div>
+				
+               <div class="quiz__item">
+                    <div class="quiz__title quiz__title--short">
+                        <p class="quiz__count">2<span>из 9</span></p>
+                        <p class="quiz__question">Есть размеры и визуализация комплекта?</p>
+                    </div>
+					<input type="hidden" name="DATA[QUESTION_2]" value="Есть размеры и визуализация комплекта?:">
+                    
+                    <div class="quiz__answers">
+                        <div class="quiz__answer quiz__answer--flex">
+                             <input type="radio" name="answer2" id="input3" value="Да"><label class="label-yes" for="input3">Да</label>
+                             <label class="label-dimentions" for="input4"><input type="text" name="answer2_text" id="input4" value=""><p>(укажите размеры)</p></label>
+                             <label for="file"><img src="./assets/images/quiz-2/file.svg" alt=""><input type="file" name="file" id="file"><span>Нажмите, чтобы загрузить файл</span></label>
+                        </div>
+                        <div class="quiz__answer">
+							<input type="radio" name="answer2" id="input5" value="Нет"><label for="input5">Нет, нужен ваш совет</label>
+                        </div>
+						<input type="hidden" name="DATA[ANSWER_2]" value="" class="answer-hidden">
+                    </div>
+                    <div class="button button--dark quiz__button">далее</div>
+					
+					                    <div class="quiz__image"><img src="./assets/images/quiz-2/img-3.jpg" alt=""></div>
+										
+			   </div>
+			   
+               <div class="quiz__item">
+                    <div class="quiz__title">
+                        <p class="quiz__count">3<span>из 9</span></p>
+                        <p class="quiz__question">Какой тип чаши</p>
+                    </div>
+					<input type="hidden" name="DATA[QUESTION_3]" value="Какой тип чаши">
+					<div class="quiz__answers quiz__answers--image quiz__answers--image2 quiz__answers--sb">
+                        <div class="quiz__answer quiz__answer--image2">
+						                            
+                            <input class="quiz__answer-input" type="radio" name="answer3" id="input6" value="Накладная"><label for="input6">Накладная</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-4.png" alt="">
+                        </div>
+                        <div class="quiz__answer quiz__answer--image2">
+												
+                            <input class="quiz__answer-input" type="radio" name="answer3" id="input7" value="Цельнолитая"><label for="input7">Цельнолитая</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-5.png" alt="">
+                        </div>
+						<input type="hidden" name="DATA[ANSWER_3]" value="" class="answer-hidden">
+					</div>
+                    <div class="button button--dark quiz__button">далее</div>
+               </div>
+			   
+               <div class="quiz__item">
+                    <div class="quiz__title">
+                        <p class="quiz__count">4<span>из 9</span></p>
+                        <p class="quiz__question">Сколько чаш будет?</p>
+                    </div>
+					<input type="hidden" name="DATA[QUESTION_4]" value="Сколько чаш будет?">
+                    <div class="quiz__answers">
+                        <div class="quiz__answer">
+                            <input type="radio" name="answer4" id="input8" value="1 чаша"><label for="input8">1 чаша</label>
+                        </div>
+                        <div class="quiz__answer">
+                            <input type="radio" name="answer4" id="input9" value="2 чаши одинаковых"><label for="input9">2 чаши одинаковых</label>
+                        </div>
+						<div class="quiz__answer">
+                            <input type="radio" name="answer4" id="input10" value="2 чаши разных"><label for="input10">2 чаши разных</label>
+                        </div>
+						<input type="hidden" name="DATA[ANSWER_4]" value="" class="answer-hidden">
+                    </div>
+                    <div class="button button--dark quiz__button">далее</div>
+					
+					                    <div class="quiz__image"><img src="./assets/images/quiz-2/img-6.jpg" alt=""></div>
+					               </div>
+			   
+               <div class="quiz__item">
+                    <div class="quiz__title">
+                        <p class="quiz__count">5<span>из 9</span></p>
+                        <p class="quiz__question">Цвет бетона:</p>
+                    </div>
+					<input type="hidden" name="DATA[QUESTION_5]" value="Цвет бетона:">
+                   <div class="quiz__answers quiz__answers--image quiz__answers--image3">
+                    <div class="quiz__answer quiz__answer--image quiz__answer--image3">
+                                                
+                        <input class="quiz__answer-input" type="radio" name="answer5" id="input11" value="Однотонный(15 типовых цветов)"><label for="input11">Однотонный<br>(15 типовых цветов)</label>
+                        <img class="quiz__answer-img" src="./assets/images/quiz-2/img-7.jpg" alt="">
+                    </div>
+                    <div class="quiz__answer quiz__answer--image quiz__answer--image3">
+                                                
+                        <input class="quiz__answer-input" type="radio" name="answer5" id="input12" value="Комбинированный"><label for="input12">Комбинированный</label>
+                        <img class="quiz__answer-img" src="./assets/images/quiz-2/img-8.jpg" alt="">
+                    </div>
+                    <div class="quiz__answer quiz__answer--image quiz__answer--image3">
+                                                
+                        <input class="quiz__answer-input" type="radio" name="answer5" id="input13" value="Комбинированный(бетон и дерево)"><label for="input13">Комбинированный<br>(бетон и дерево)</label>
+                        <img class="quiz__answer-img" src="./assets/images/quiz-2/img-9.jpg" alt="">
+                    </div>
+                    
+                    <input type="hidden" name="DATA[ANSWER_5]" value="" class="answer-hidden">
+                </div>
+                    <div class="button button--dark quiz__button">далее</div>
+										
+               </div>
+			   
+               <div class="quiz__item">
+                <div class="quiz__title quiz__title--long">
+                    <p class="quiz__count">6<span>из 9</span></p>
+                    <p class="quiz__question">Какой слив раковины вам нужен?</p>
+                </div>
+				<input type="hidden" name="DATA[QUESTION_6]" value="Какой слив раковины вам нужен?">
+                <div class="quiz__answers quiz__answers--image quiz__answers--image3">
+						<div class="quiz__answer quiz__answer--image quiz__answer--image3">
+						                            
+                            <input class="quiz__answer-input" type="radio" name="answer6" id="input14" value="Щелевой"><label for="input14">Щелевой</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-10.jpg" alt="">
+                        </div>
+                        <div class="quiz__answer quiz__answer--image quiz__answer--image3">
+						                            
+                            <input class="quiz__answer-input" type="radio" name="answer6" id="input15" value="Классический"><label for="input15">Классический</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-11.jpg" alt="">
+                        </div>
+						<div class="quiz__answer quiz__answer--image quiz__answer--image3">
+						                            
+                            <input class="quiz__answer-input" type="radio" name="answer6" id="input16" value="Иная форма"><label for="input16">Иная форма</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-12.jpg" alt="">
+                        </div>
+                        
+						<input type="hidden" name="DATA[ANSWER_6]" value="" class="answer-hidden">
+                    </div>
+					
+                <div class="button button--dark quiz__button">далее</div>
+                
+               </div>
+			   
+			    <div class="quiz__item">
+                    
+                    <div class="quiz__title">
+                        <p class="quiz__count">7<span>из 9</span></p>
+                        <p class="quiz__question">Фасад ящиков хочу из:</p>
+                    </div>
+					<input type="hidden" name="DATA[QUESTION_7]" value="Фасад ящиков хочу из:">
+
+                <div class="quiz__answers quiz__answers--image quiz__answers--image2">
+						<div class="quiz__answer quiz__answer--image quiz__answer--image3 quiz__answer--image4">
+						                            
+                            <input class="quiz__answer-input" type="radio" name="answer7" id="input17" value="Бетона"><label for="input17">Бетона</label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-13.jpg" alt="">
+                        </div>
+                        <div class="quiz__answer quiz__answer--image quiz__answer--image3 quiz__answer--image4">
+						                            
+                            <input class="quiz__answer-input" type="radio" name="answer7" id="input18" value="Массив дерева"><label for="input18">Массив дерева </label>
+                            <img class="quiz__answer-img" src="./assets/images/quiz-2/img-14.jpg" alt="">
+                        </div>
+                        
+						<input type="hidden" name="DATA[ANSWER_7]" value="" class="answer-hidden">
+                    </div>
+					
+                <div class="button button--dark quiz__button">далее</div>
+                
+               </div>
+			   
+			   <div class="quiz__item">
+                        <div class="quiz__title">
+                            <p class="quiz__count">8<span>из 9</span></p>
+                            <p class="quiz__question">Как срочно нужен?</p>
+                        </div>
+						<input type="hidden" name="DATA[QUESTION_8]" value="Как срочно нужен?">
+        
+                    <div class="quiz__answers">
+                        <div class="quiz__answer">
+                            <input type="radio" name="answer8" id="input19" value="Вчера"><label for="input19">Вчера</label>
+                        </div>
+                        <div class="quiz__answer">
+                            <input type="radio" name="answer8" id="input20" value="В течении 1 месяца"><label for="input20">В течении 1 месяца</label>
+                        </div>
+						<div class="quiz__answer">
+                            <input type="radio" name="answer8" id="input21" value="От 3 х месяцев"><label for="input21">От 3 х месяцев</label>
+                        </div>
+						<input type="hidden" name="DATA[ANSWER_8]" value="" class="answer-hidden">
+                    </div>
+                    <div class="button button--dark quiz__button">далее</div>
+					
+					                    <div class="quiz__image"><img src="./assets/images/quiz-2/img-15.jpg" alt=""></div>
+					               </div>
+			   
+               <div class="quiz__item">
+                    <div class="quiz__title quiz__title--form">
+                        <p class="quiz__count">9<span>из 9</span></p>
+                        <p class="quiz__question">Для предварительного расчета укажите ваше имя и телефон</p>
+                    </div>
+                
+                    <div class="quiz__inputs">
+                        <input type="text" name="name" placeholder="ваше имя">
+                        <input type="tel" name="phone" placeholder="+7 999 999 99 99" required>
+						<input type="hidden" id="hiddenName" name="DATA[NAME]" value="">
+						<input type="hidden" id="hiddenPhone" name="DATA[PHONE_MOBILE]" value="">
+						<input type="hidden" id="hiddenSource" name="DATA[UTM_SOURCE]" value="">
+    					<input type="hidden" id="hiddenMedium" name="DATA[UTM_MEDIUM]" value="">
+    					<input type="hidden" id="hiddenCampaign" name="DATA[UTM_CAMPAIGN]" value="">
+    					<input type="hidden" id="hiddenTerm" name="DATA[UTM_TERM]" value="">
+    					<input type="hidden" id="hiddenContent" name="DATA[UTM_CONTENT]" value="">
+                    </div>
+                    <button type="submit" class="button button--dark quiz__submit">получить расчет</button>
+                    <div class="quiz__image">
+						<img src="./assets/images/quiz-2/img-16.jpg" alt="">
+					</div>
+               </div>
+		</form>
+	
+</body>
+</html>

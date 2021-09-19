@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Главная страница">
+		<meta name="keywords" content="Ключевые слова">
+		<title>Главная</title>
+		<link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<header class="header header--light">
+			<div class="container">
+				<div class="row">
+					<div class="header__logo col"><a href="/"><img src="images/common/logo_light.svg" alt=""></a>
+						<p>Производство предметов интерьера из бетона. <br>Доставка и монтаж по России</p>
+					</div>
+					<nav class="header__nav col" id="main-menu" role="navigation">
+						<ul>
+							<li class="current-menu-item"><a href="text.html"> <span>ЧТО ТАКОЕ БЕТОН</span></a></li>
+							<li><a href="#"> <span>ЭКСПЛУАТАЦИЯ</span></a></li>
+							<li><a href="catalog.html"> <span>КАТАЛОГ ИЗДЕЛИЙ</span></a></li>
+							<li><a href="text.html"> <span>ОПЛАТА И ДОСТАВКА</span></a></li>
+							<li><a href="contacts.html"> <span>КОНТАКТЫ</span></a></li>
+						</ul>
+						<div class="line"></div>
+					</nav>
+					<div class="burger-col col d-none">
+						<button class="header__burger" id="mobile-menu-toggle"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<form action="#" id="quiz" class="quiz" name="quiz">
+			<div class="quiz__item current" style="position: relative;">
+				<div>
+					<div class="quiz__header">
+						<p>Расчет стоимости раковины</p>
+					</div>
+					<div class="quiz__title">
+						<p class="quiz__count">2<span>из 7</span></p>
+						<p class="quiz__question">У вас есть точные размеры изделия?</p>
+					</div>
+					<input type="hidden" name="DATA[QUESTION_2]" value="У вас есть точные размеры изделия?">
+				</div>  
+				<!--<div class="quiz__answers">
+					<div class="quiz__answer">
+						 <input type="radio" name="answer2" id="input3" value="Да"><label class="label-yes" for="input3">Да</label>
+						 <label class="label-dimentions" for="input4"><input type="text" name="answer2_text" id="input4" value=""><p>(укажите размеры)</p></label>
+					</div>
+					<div class="quiz__answer">
+						<input type="radio" name="answer2" id="input5" value="Нет"><label for="input5">Нет</label>
+					</div>
+					<input type="hidden" name="DATA[ANSWER_2]" value="" class="answer-hidden">
+				</div>-->
+
+				<div class="quiz__answers">
+					<div class="quiz__answer quiz__answer--flex">
+						 <input type="radio" name="answer2" id="input3" value="Да"><label class="label-yes" for="input3">Да</label>
+						 <label class="label-dimentions" for="input4"><input type="text" name="answer2_text" id="input4" value=""><p>(укажите размеры)</p></label>
+						 <label for="file"><img src="./assets/images/quiz-2/file.svg" alt=""><input type="file" name="file" id="file"><span>Нажмите, чтобы загрузить файл</span></label>
+					</div>
+					<div class="quiz__answer">
+						<input type="radio" name="answer2" id="input5" value="Нет"><label for="input5">Нет, нужен ваш совет</label>
+					</div>
+					<input type="hidden" name="DATA[ANSWER_2]" value="" class="answer-hidden">
+				</div>
+				<div class="button button--dark quiz__button">далее</div>
+				
+				
+				<div class="quiz__image"><img src="./assets/images/quiz/img-2.jpg" alt=""></div>
+				
+				
+		   </div>
+
+		   <!--<div class="quiz__item current" style="position: relative;">
+			<div class="quiz__title quiz__title--short">
+				<p class="quiz__count">2<span>из 9</span></p>
+				<p class="quiz__question">Есть размеры и визуализация комплекта?</p>
+			</div>
+			<input type="hidden" name="DATA[QUESTION_2]" value="Есть размеры и визуализация комплекта?:">
+			
+			<div class="quiz__answers">
+				<div class="quiz__answer quiz__answer--flex">
+					 <input type="radio" name="answer2" id="input3" value="Да"><label class="label-yes" for="input3">Да</label>
+					 <label class="label-dimentions" for="input4"><input type="text" name="answer2_text" id="input4" value=""><p>(укажите размеры)</p></label>
+					 <label for="file"><img src="./assets/images/quiz-2/file.svg" alt=""><input type="file" name="file" id="file"><span>Нажмите, чтобы загрузить файл</span></label>
+				</div>
+				<div class="quiz__answer">
+					<input type="radio" name="answer2" id="input5" value="Нет"><label for="input5">Нет, нужен ваш совет</label>
+				</div>
+				<input type="hidden" name="DATA[ANSWER_2]" value="" class="answer-hidden">
+			</div>
+			<div class="button button--dark quiz__button">далее</div>
+			
+								<div class="quiz__image"><img src="./assets/images/quiz-2/img-3.jpg" alt=""></div>
+								
+	   </div>-->
+		</form>
+			<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="contacts-wrapper">
+						<div class="logo-col col"><a href="/"><img src="images/common/logo_dark.svg" alt=""></a>
+							<p>© 2016 «Петробетон»</p>
+						</div>
+						<div class="contacts-col col"><a href="tel:8 (499) 877-56-80">8 (499) 877-56-80</a><a href="mailto:greybeton@petrobeton.com">greybeton@petrobeton.com</a></div>
+					</div>
+					<div class="links-wrapper">
+						<div class="social-col social col" role="navigation">
+							<div class="social__wrapper"><a class="social__link social__link--insta" href="https://instagram.com" target="_blank"></a><a class="social__link social__link--vk" href="https://vk.com" target="_blank"></a><a class="social__link social__link--fb" href="https://facebook.com" target="_blank"></a></div>
+						</div>
+						<div class="get-catalog-col col">
+							<button class="button button--dark" data-micromodal-trigger="modal-catalog">Скачать каталог</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./assets/js/vendor.js"></script>
+		<script src="./assets/js/main.js"></script>
+		<div class="modal micromodal-slide" id="modal-order" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+				<div class="modal__container" role="dialog">
+					<header class="modal__header">               
+						<p class="modal__title">Оформить заказ</p>
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+					</header>
+					<main class="modal__content">
+						<p class="subtitle">Укажите ваши данные и наш менеджер перезвонит вам в ближашее время</p>
+						<form class="form" action="">
+							<input type="text" placeholder="Ваше имя">
+							<input type="tel" placeholder="+7 999 999 99 99">
+							<button class="button button--dark" type="submit">Отправить</button>
+						</form>
+					</main>
+				</div>
+			</div>
+		</div>
+		<div class="modal micromodal-slide" id="modal-catalog" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+				<div class="modal__container" role="dialog">
+					<header class="modal__header">               
+						<p class="modal__title">Кому прислать каталог?</p>
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+					</header>
+					<main class="modal__content">
+						<p class="subtitle">Укажите ваши данные и мы вышлем вам каталог в ближашее время</p>
+						<form class="form" action="">
+							<input type="text" placeholder="Ваше имя">
+							<input type="tel" placeholder="+7 999 999 99 99">
+							<button class="button button--dark" type="submit">Отправить</button>
+						</form>
+					</main>
+				</div>
+			</div>
+		</div>
+		<div class="modal micromodal-slide" id="modal-success" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+				<div class="modal__container" role="dialog">
+					<header class="modal__header">               
+						<p class="modal__title">Успешно!</p>
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+					</header>
+					<main class="modal__content modal__content--success">
+						<p>Ваше сообщение успешно отправлено!<br><small>Мы свяжемся с вами в ближайшее время.</small></p>
+						<button class="button button--dark" data-micromodal-close="">Ок</button>
+					</main>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
