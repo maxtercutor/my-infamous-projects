@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://use.fontawesome.com/c192ada680.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner flex">
+                   <a href="#" class="header__logo"><img src="./assets/images/front/logo.svg" alt=""></a>
+                   <nav class="header__menu">
+                       <div class="header__close-menu-wrapper"><div class="header__close-menu"></div></div>
+                       <ul>
+                           <li><a href="#">Мероприятия</a></li>
+                           <li><a href="#">Проекты</a></li>
+                           <li><a href="#">Литература</a></li>
+                           <li><a href="#">Cотрудничество</a></li>
+                           <li><a href="#">Контакты</a></li>
+                       </ul>
+                        <form action="#" class="header__search-form-mobile">
+                            <input type="text"><input type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </form>
+                   </nav>
+                   <div class="header__icons">
+                       <div class="header__search">
+                           <i class="fa fa-search" aria-hidden="true"></i>
+                           <form action="#" class="header__search-form">
+                            <input type="text"><input type="submit">
+                            </form>
+                        </div>
+                       <a href="#" class="header__social"><img src="./assets/images/front/social-1.svg" alt=""></a>
+                       <a href="#" class="header__social"><img src="./assets/images/front/social-2.svg" alt=""></a>
+                       <a href="#" class="header__social"><img src="./assets/images/front/social-3.svg" alt=""></a>
+                   </div>
+                   <div class="burger">
+                       <div class="burger__item"></div>
+                       <div class="burger__item"></div>
+                       <div class="burger__item"></div>
+                   </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="events-page">
+        <header class="events-page__header">
+            <img src="./assets/images/events/background.jpg" alt="">
+            <div class="container">
+                <h1>Мероприятия</h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="events-page__filters-button flex">
+                <div class="events-page__filters">
+                    <a href="#" class="active">Ближайшие мероприятия</a>
+                    <a href="#">Санкт-Петербург</a>
+                    <a href="#">Зарубежные</a>
+                </div>
+                <select name="select" id="select" class="events-page__select">
+                    <option value="Ближайшие мероприятия">Ближайшие мероприятия</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Зарубежные">Зарубежные</option>
+                </select>
+                <div class="events-page__button">Скачать план мероприятий на 2021 год</div>
+            </div>
+            <div class="events-page__items">
+                <div class="events-page__item flex">
+                    <div class="events-page__text">
+                        <div class="events-page__date-location flex">
+                            <span class="events-page__date">26–28 января</span><span class="events-page__location">Санкт-Петербург</span>
+                        </div>
+                        <a href="#" class="events-page__title"><h3>День снятия Блокады Ленинграда</h3></a>
+                        <p class="events-page__excerpt">Проведение дистанционных мероприятий, посвящённых празднованию 77-ой годовщины полного освобождения Ленинграда от фашистской блокады</p>
+                    </div>
+                    <a href="#" class="events-page__image"><img src="./assets/images/events/img-1.jpg" alt=""></a>
+                </div>
+                <div class="events-page__item flex">
+                    <div class="events-page__text">
+                        <div class="events-page__date-location flex">
+                            <span class="events-page__date">8–12 марта</span><span class="events-page__location">Сербия</span>
+                        </div>
+                        <a href="#" class="events-page__title"><h3>«Празднуем Масленицу вместе с Санкт-Петербургом»</h3></a>
+                        <p class="events-page__excerpt">«Празднуем Масленицу вместе с Санкт-Петербургом»</p>
+                    </div>
+                    <a href="#" class="events-page__image"><img src="./assets/images/events/img-2.jpg" alt=""></a>
+                </div>
+                <div class="events-page__item flex">
+                    <div class="events-page__text">
+                        <div class="events-page__date-location flex">
+                            <span class="events-page__date">8-14 марта</span><span class="events-page__location">Санкт-Петербург</span>
+                        </div>
+                        <a href="#" class="events-page__title"><h3>«Читаем Блокадную книгу»</h3></a>
+                        <p class="events-page__excerpt">Образовательная программа по истории и культуре России и Санкт-Петербурга для детей из числа соотечественников, проживающих за рубежом</p>
+                    </div>
+                    <a href="#" class="events-page__image"><img src="./assets/images/events/img-3.jpg" alt=""></a>
+                </div>
+                <div class="events-page__item flex">
+                    <div class="events-page__text">
+                        <div class="events-page__date-location flex">
+                            <span class="events-page__date">12-23 апреля</span><span class="events-page__location">Санкт-Петербург</span>
+                        </div>
+                        <a href="#" class="events-page__title"><h3>«История Государства Российского»</h3></a>
+                        <p class="events-page__excerpt">XVII Образовательная программа для соотечественников, проживающих за рубежом, по истории России (Культурно-исторический университет)</p>
+                    </div>
+                    <a href="#" class="events-page__image"><img src="./assets/images/events/img-4.jpg" alt=""></a>
+                </div>
+                <div class="events-page__item flex">
+                    <div class="events-page__text">
+                        <div class="events-page__date-location flex">
+                            <span class="events-page__date">12-23 апреля</span><span class="events-page__location">Санкт-Петербург</span>
+                        </div>
+                        <a href="#" class="events-page__title"><h3>День Победы</h3></a>
+                        <p class="events-page__excerpt">Приём делегаций ветеранов Великой Отечественной войны и жителей блокадного Ленинграда, проживающих за рубежом, прибывающих для участия в городских мероприятиях по празднованию 76-ой годовщины Победы в Великой Отечественной войне</p>
+                    </div>
+                    <a href="#" class="events-page__image"><img src="./assets/images/events/img-5.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="pagination__wrapper">
+                    <a class="pagination__arrow pagination__arrow--left"></i></a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><span>...</span><a href="#">9</a><a href="#">10</a><a href="#" class="pagination__arrow pagination__arrow--right"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items flex">
+                <div class="footer__item footer__item--left">
+                    <div class="footer__logo-text">
+                        <a href="#" class="footer__logo"><img src="./assets/images/front/logo-footer.svg" alt=""></a>
+                        <p class="footer__text">Правительство Санкт-Петербурга<span>Комитет по внешним связям <br>Санкт-Петербурга</span></p>
+                    </div>
+                    <p class="footer__copyright">© Комитет по внешним связям Санкт-Петербурга, 2020-2021</p>
+                </div>
+                <div class="footer__item footer__item--center">
+                    <nav class="footer__menu">
+                        <ul>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Литература</a></li>
+                            <li><a href="#">Cотрудничество</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item footer__item--right">
+                    <div class="footer__link">
+                        <a href="tel:576-45-84">576-45-84</a><span>(Факс)</span>
+                    </div>
+                    <div class="footer__link">
+                        <a href="mailto:compatriots@kvs.gov.spb.ru">compatriots@kvs.gov.spb.ru</a>
+                    </div>
+                    <div class="footer__icons">
+                        <div class="footer__icon"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
+                        <div class="footer__icon"><a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__bottom">Официальный тематический ресурс Комитета по внешним связям Санкт-Петербурга, освещающий этапы реализации государственной политики Российской Федерации в отношении соотечественников за рубежом. Портал аккумулирует информацию о мероприятиях Администрации Санкт-Петербурга, проектах государственных учреждений, общественных объединений соотечественников и призван освещать различные аспекты отношений с зарубежными соотечественниками.</p>
+        </div>
+    </footer>
+    <script src="./assets/js/ellipsis.min.js"></script>
+    <script>
+        if(window.innerWidth < 1280 && window.innerWidth >= 1000) {
+            Ellipsis({
+                className: '.events-page__excerpt',
+                lines: 3.5
+            });
+        }
+        if(window.innerWidth < 1000 && window.innerWidth > 480) {
+            Ellipsis({
+                className: '.events-page__excerpt',
+                lines: 5
+            });
+        }
+        
+    </script>
+</body>
+</html>

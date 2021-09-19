@@ -1,0 +1,557 @@
+@media (max-width: 768px) {
+    .container {
+        width: 440px;
+    }
+    section {
+        padding-bottom: 40px;
+    }
+    .breadcrumbs {
+        font-size: 13px;
+        margin: 40px 0;
+    }
+    
+    .main-screen {
+        
+        padding:60px 0 306px;
+       
+        margin-bottom: 60px;
+    
+    
+        &__text {
+            width: 100%;
+    margin-bottom: 40px;
+        }
+    
+
+    
+        &__number {
+            
+    font-size: 28px;
+    
+    line-height: 40px;
+    
+    color: $blue;
+    
+    margin-left: 0;
+    margin-right: 37px;
+    
+    span {
+        
+    font-size: 12px;
+    line-height: 16px;
+    
+    }
+    
+        }
+    
+        // .main-screen__title
+    
+        &__title {
+            
+    
+    font-size: 31px;
+    
+    line-height: 43px;
+    
+    margin-top: 40px;
+        }
+    }
+    
+    .events {
+    margin-bottom: 60px;
+    
+    h2 {
+        margin-bottom: 30px;
+    }
+    
+        &__items {
+
+            margin-bottom: 30px;
+        }
+    
+      
+    
+        &__item {
+            width: 100%;
+            height: 238px;
+    
+           
+    
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+    
+    .projects {
+    margin-bottom: 60px;
+    
+        &__header {
+    
+            h2 {
+                margin-bottom: 30px;
+            }
+        }
+    
+    
+        &__items {
+    height: 330px;
+            margin-bottom: 60px;
+    
+            
+        }
+
+
+    
+        &__item {
+            //min-width: 480px;
+            left: 150px;
+            left: 0;
+        }
+
+        .container--author {
+            width: 100%;
+        }
+    &__author {
+        flex-direction: column;
+    }
+    
+    
+        &__author-image {
+           width: 100%;
+            height: 300px;
+            margin-bottom: 40px;
+        }
+    
+    
+        &__author-text {
+            width: 440px;
+    font-size: 15px;
+    line-height: 20px;
+    
+    margin: 0 auto;
+    span {
+    
+    margin-top: 0;
+    
+    
+    }
+    
+        }
+    }
+    
+    
+    
+    
+    .tasks {
+    margin-bottom: 40px;
+
+    
+        h2 {
+            margin-bottom: 30px;
+        }
+    
+    
+        &__item {
+            width: 100%;
+
+        }
+    
+        &__text {
+    font-size: 15px;
+    line-height: 20px;
+    
+    
+        }
+    }
+    
+    
+    .partners {
+    margin-bottom: 60px;
+    
+    h2 {
+        margin-bottom: 30px;
+        margin-left: calc((100vw - 464px) / 2);
+    }
+    &__item {
+        left: calc((100vw - 464px) / 2);
+    }
+        
+    }
+    
+    .footer {
+        
+        padding: 53px 0 50px;
+        
+            
+        &__item--left {
+            margin-bottom: 30px;
+        }
+    
+        }
+
+
+        .projects-page {
+&__header {
+    height: 310px;
+    //padding: 122p 0;
+    margin-bottom: 40px;
+}
+
+&__filters {
+    a {
+        margin-right: 30px;
+    }
+}
+
+&__item {
+    width: 100%;
+    margin-top: 20px;
+    &:nth-of-type(1) {
+        margin-top: 40px;
+    }
+    &:nth-of-type(2) {
+        margin-top: 20px;
+    }
+}
+&__image {
+    height: 262px;
+}
+        }
+
+
+
+        .literature {
+
+            // .literature__header
+        
+            &__header {
+                height: 310px;
+               padding-bottom: 66px;
+
+                .container {
+                    align-items: flex-end;
+                }
+                
+            }
+            h1 {
+                margin-bottom: 4px;
+            }
+            &__subtitle {
+                width: 300px;
+            }
+
+        &__select {
+            margin-bottom: 20px;
+            span,
+            select {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            span {
+                margin-right: 12px;
+            }
+
+        }
+        
+            &__item {
+                width: 210px;
+               
+        
+                margin-top: 20px;
+        
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    margin-top: 40px;
+                }
+                &:nth-of-type(3) {
+                    margin-top: 20px;
+                }
+            }
+            &__image {
+                height: 320px;
+            }
+        }
+
+        .events-page {
+
+    
+            &__header {
+                height: 310px;
+                margin-bottom: 30px;
+                padding-bottom: 86px;
+
+                .container {
+                    align-items: flex-end;
+                }
+            }
+                    
+                        &__filters-button {
+                            margin-bottom: 40px;
+                            
+                        }
+
+                        &__filters {
+                            margin-bottom: 30px;
+
+                            a {
+                                font-size: 15px;
+                            line-height: 19px;
+                            }
+
+                        }
+                    
+                    &__button {
+                        width: 100%;
+                    }
+                    
+                        &__item {
+                            flex-direction: column;
+                            
+                        }
+                    
+                        &__text {
+                            width: 100%;
+                            margin-bottom: 33px;
+                        }
+                    
+                    
+                        &__image {
+                            
+                            width: 100%;
+                            height: 174px;
+                    
+                        }
+                    }
+                    
+                    .contacts {
+    
+&__item {
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+            
+                        &__name {
+                            font-size: 21px;
+                            line-height: 28px;
+                            margin-bottom: 35px;
+
+                            span {
+                                width: 94%;
+                                font-size: 17px;
+                                line-height: 23px;
+                            }
+                        }
+                        
+                            &__image {
+                                width: 250px;
+                                height: 320px;
+
+                                margin-bottom: 16px;
+                            }
+                        
+                            &__text {
+                                width: 100%;
+                                display: block;
+                                
+                            }
+                            &__phone,
+                            &__email {
+                                a {
+                                    font-size: 17px;
+                                    line-height: 23px;
+                                    margin-left: 20px;
+                                }
+                            }
+                            &__phone {
+                                margin-bottom: 35px;
+                            }
+                        }
+
+
+                        .post-page {
+                            padding-bottom: 40px;
+
+                            h2 {
+                                margin-bottom: 20px;
+                            }
+                        
+                            // .post-page__header
+                        
+                            &__header {
+                                
+                                height: 310px;
+                                
+                            }
+                            &--template-1 {
+                                .post-page__header {
+                                    height: 310px;
+                                
+                                .container {
+                                    padding-bottom: 20px;
+                                }
+                            }
+                            }
+                            &--template-2 {
+                                .post-page__header {
+                                    height: 310px;
+
+                                    .container {
+                                        padding-bottom: 40px;
+                                    }
+                                }
+                            }
+
+                            .breadcrumbs {
+                                margin: 40px 0 20px;
+
+                            }
+                        
+                            &__title {
+                                
+                        font-size: 25px;
+                        line-height: 32px;
+                        
+                            }
+
+                            &__title-template {
+                                font-size: 40px;
+                        line-height: 52px;
+                            }
+                        
+                        
+                            &__date,
+                            &__location {
+                               
+                        font-size: 19px;
+                        line-height: 25px;
+                        
+                        
+                            }
+
+                            &__content,
+                            &__interview {
+                                margin-bottom: 40px;
+                                p {
+                                    font-size: 15px;
+                                    line-height: 19px;
+                                }
+                            }
+
+                            
+                            
+
+                            .flex--template-1 {
+                                flex-direction: column;
+                                align-items: flex-start;
+                                margin: 40px 0 50px;
+
+                                .breadcrumbs {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                            .flex--template-2 {
+                                margin: 40px 0 50px;
+                            }
+
+                        
+                            &__text-1 {
+                                width: 480px;
+                                margin-bottom: 20px;
+                            }
+                            &__image-1 {
+                                
+                                height: 300px;
+                            }
+                            &__image-3 {
+                                margin-bottom: 20px;
+                            }
+                            
+                            &__gallery-1-image {
+                                
+                                height: 280px;
+                
+                                span.year {
+                            
+                                    bottom: 20px;
+                                    right: 20px;
+                        
+                                    
+                        font-size: 27px;
+                        
+                        line-height: 27px;
+                        
+                        
+                        
+                                }
+                                
+                            }
+
+                            &--template-2 {
+                                .post-page__button {
+                                    width: 210px!important;
+                                    font-size: 13px;
+                                    line-height: 17px;
+                                    padding: 6px 0;
+                                }
+                            }
+                
+                        
+                        &__year {
+                            bottom: 30px;
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                        &__photo-gallery {
+                            margin-bottom: 40px;
+                        }
+
+                        &__photo-gallery-item {
+                            width: 210px;
+                            height: 140px;
+            
+                            
+                        }
+
+                        &__video-items {
+                            margin-bottom: 0;
+                        }
+            
+                        &__video-item {
+                            width: 100%;
+                            height: 264px;
+            
+                            margin-bottom: 20px;
+                        }
+                        }
+                        
+                        .form {
+    
+                            width: 450px;
+                            
+                            
+                            &__subtitle {
+                                width: 100%;
+                                width: 290px;
+                                font-size: 15px;
+                                line-height: 20px;
+                            }
+                            
+                                
+                            
+                               
+                            
+                               &__button-wrapper {
+                                   text-align: left;
+                               }
+                            
+                                
+                            
+                            }
+                            
+                            
+}

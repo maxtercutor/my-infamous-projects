@@ -1,0 +1,105 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open_sans.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/open_sans.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/open_sans.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/open_sans.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/open_sans.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/open_sans.svg#open_sans') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Playfair';
+	src: url('../fonts/playfair_display_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/playfair_display_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/playfair_display_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/playfair_display_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/playfair_display_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/playfair_display_regular.svg#playfair_display_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Playfair Black';
+	src: url('../fonts/playfair_display_black.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/playfair_display_black.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/playfair_display_black.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/playfair_display_black.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/playfair_display_black.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/playfair_display_black.svg#playfair_display_black') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+html {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+h1 {
+    font-family: "Playfair Black";
+font-size: 100px;
+font-weight: 700;
+line-height: 130px;
+letter-spacing: 0em;
+color: #ffffff;
+text-transform: uppercase;
+&::first-letter {
+    font-size: 115%;
+}
+
+}
+
+h2 {
+    font-family: "Playfair Black";
+font-size: 41px;
+font-weight: 700;
+line-height: 53px;
+letter-spacing: 0em;
+color: #217ABD;
+text-transform: uppercase;
+
+&::first-letter {
+    font-size: 115%;
+}
+}
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 80px;
+        line-height: 104px;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 60px;
+        line-height: 78px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    h2 {
+        font-size: 18px!important;
+        //font-size: 20px!important;
+       // line-height: 26px;
+        line-height: 24px!important;
+
+        &::first-letter {
+            font-size: 125%;
+        }
+    }
+}

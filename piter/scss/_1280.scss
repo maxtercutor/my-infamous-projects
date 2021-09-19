@@ -1,0 +1,453 @@
+@media (max-width: 1280px) {
+
+
+
+.container {
+    width: 960px;
+}
+
+section {
+    padding-bottom: 60px;
+}
+
+.header {
+    
+
+		&__menu {
+            ul {
+                
+                li {
+                    margin-left: 20px;
+                    
+                }
+            }
+		}
+
+
+        &__search-form {
+           
+            width: 680px;
+            
+        }
+
+}
+
+.main-screen {
+    padding: 80px 0 200px;
+    margin-bottom: 100px;
+
+
+    &__title {
+    
+
+font-size: 70px;
+line-height: 98px;
+    }
+}
+
+.events {
+margin-bottom: 100px;
+
+    &__item {
+        width: 470px;
+        height: 232px;
+        &:nth-of-type(1) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__month,
+    &__title { 
+        font-size: 17px;
+        line-height: 22px;
+        opacity: 1.0;
+    }
+}
+
+.projects {
+margin-bottom: 100px;
+
+    // .projects__items
+
+    &__items {
+        margin-bottom: 100px;
+        
+    }
+
+    &__item {
+        left: -800px;
+    }
+
+    &__author-image {
+        width: 440px;
+        height: 322px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            object-position: top;
+        }
+    }
+
+    &__author-text {
+        width: 470px;
+font-size: 17px;
+line-height: 22px;
+
+span {
+    margin-top: 0;
+}
+
+    }
+
+    &__title {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+
+.tasks {
+margin-bottom: 80px;
+
+
+    &__item {
+        width: 470px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__image {
+       min-width: 54px;
+       max-width: 54px;
+       height: 58px;
+        margin-right: 20px;
+
+    }
+
+    &__text {
+font-size: 15px;
+line-height: 19.5px;
+
+
+    }
+}
+
+
+.partners {
+margin-bottom: 100px;
+
+}
+
+.footer {
+
+padding: 82px 0 80px;
+
+    &__items {
+        margin-bottom: 50px;
+    }
+    &__copyright {
+        font-size: 14px;
+    }
+}
+
+
+.projects-page {
+
+
+    &__item {
+        width: 470px;
+
+        margin-top: 30px;
+
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+            margin-top: 60px;
+        }
+        
+    }
+
+
+    &__image {
+        height: 352px;
+    }
+}
+
+.literature {
+
+    &__search-form {
+        
+        width: 366px;
+    }
+
+
+
+
+    &__item {
+        width: 225px;
+        margin-top: 30px;
+
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+            margin-top: 60px;
+        }
+    }
+
+    &__image {
+        
+        height: 378px;
+        margin-bottom: 12px;
+
+    }
+
+    &__title {
+font-size: 15px;
+line-height: 20px;
+
+    }
+
+    &__author {
+font-size: 15px;
+line-height: 20px;
+    }
+}
+
+
+
+.events-page {
+
+    
+
+    // .events-page__filters-button
+
+    &__filters-button {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    // .events-page__filters
+
+    &__filters {
+        
+
+       margin-bottom: 30px;
+       a {
+           margin-right: 60px;
+       }
+    }
+
+
+    &__item {
+        
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__text {
+        width: 466px;
+    }
+
+    &__title {
+        font-size: 21px;
+    }
+
+
+    &__image {
+        
+        width: 470px;
+        height: 210px;
+
+    }
+}
+
+.contacts {
+    
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+
+
+    &__image {
+        width: 220px;
+        height: 274px;
+
+    }
+
+    &__text {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__phone {
+margin-bottom: 0;
+}
+
+
+}
+
+.post-page {
+    &--template-1 {
+        .post-page__header {
+            height: 700px;
+
+            .container {
+                padding-bottom: 60px;
+            }
+            
+
+            
+        }
+    
+    }
+    
+    &--template-2 {
+        .post-page__header {
+            height: 700px;
+
+            .container {
+                padding-bottom: 70px;
+            }
+            
+
+            
+        }
+        
+    }
+    
+
+            &__title-template {
+                font-size: 80px;
+        line-height: 104px;
+        &--1 {
+            margin-bottom: 30px;
+        }
+            }
+
+            .flex--template-2 {
+                flex-wrap: wrap;
+                .breadcrumbs {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                a[download] {
+                    display: block;
+                    width: 242px;
+                }
+            }
+        
+            &__text-1 {
+                width: 470px;
+            }
+            &__text-2 {
+                width: 100%;
+            }
+            &__image-1 {
+                width: 470px;
+                height: 588px;
+            }
+            &__image-2 {
+                display: none;
+            }
+            &__image-3 {
+                width: 470px;
+            }
+            &__gallery-1-image {
+                width: 468px;
+                height: 543px;
+
+
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+
+                span.year {
+                    
+                    bottom: 40px;
+                    right: 40px;
+        
+        
+                }
+            }
+
+            &__gallery-1-image.prev-last-child {
+                margin-bottom: 0;
+            }
+
+            &__year {
+                bottom: 80px;
+            }
+            &__photo-gallery {
+                margin-bottom: 60px;
+            }
+
+            &__photo-gallery-items {
+                margin-bottom: 10px;
+            }
+
+            &__photo-gallery-item {
+                width: 224px;
+                height: 152px;
+
+                margin-bottom: 20px;
+            }
+
+            &__video-items {
+                margin-bottom: 10px;
+            }
+
+            &__video-item {
+                width: 470px;
+                height: 280px;
+
+                margin-bottom: 20px;
+            }
+}
+
+.form {
+    
+width: 980px;
+padding: 100px 50px;
+
+
+
+    
+
+    &__inputs {
+        width: 400px;
+
+
+
+        input {
+            
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        
+        
+        }
+    }
+
+   
+
+    &__textarea {
+        width: 400px;
+
+       
+    }
+
+}
+
+
+
+
+}

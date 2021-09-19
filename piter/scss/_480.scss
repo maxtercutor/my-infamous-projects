@@ -1,0 +1,533 @@
+@media (max-width: 480px) {
+    .container {
+        width: 335px;
+    }
+    
+
+    .header-wrapper {
+    
+        height: 80px;
+    }
+    .header {
+       
+        padding: 20px 0;
+        &__icons {
+           
+           display: block;
+           a {
+               display: inline-block;
+               margin-left: 0;
+               margin-right: 20px;
+           }
+           .header__search {
+               display: none;
+           }
+        }
+
+
+    
+        &__search-form-mobile {
+           margin-bottom: 40px;
+        }
+    }
+    
+    
+    .main-screen {
+        
+        padding: 40px 0 120px;
+        
+        margin-bottom: 40px;
+    
+       
+    
+        &__text {
+           
+    margin-bottom: 60px;
+        }
+    
+        &__title {
+            
+    
+    font-size: 24px;
+    
+    line-height: 33px;
+    
+        }
+    }
+    
+    .events {
+    margin-bottom: 40px;
+    .container {
+        width: 100%;
+    }
+    
+    h2 {
+        width: 335px;
+        margin: 0 auto 20px;
+    }
+    
+        &__item {
+    
+            height: 238px;
+        }
+
+        &__link {
+            display: block;
+            width: 335px;
+            margin: 0 auto;
+        }
+
+        &__month {
+            width: 70px;
+        }
+    
+    }
+    
+    .projects {
+    margin-bottom: 40px;
+    
+        &__header {
+            margin-bottom: 68px;
+    
+            h2 {
+
+                margin-bottom: 0;
+            }
+        }
+    
+    
+        &__items {
+            
+            margin-bottom: 40px;
+    height: 280px;
+            
+            
+        }
+
+        
+    
+        &__item {
+            left: 0;
+            
+        }
+    
+    
+        &__author-image {
+            
+            height: 250px;
+            margin-bottom: 20px;
+
+        }
+    
+    
+        &__author-text {
+            width: 335px;
+    margin: 0 auto;
+    
+    span {
+        
+    margin-top: 6px;
+    
+    
+    }
+    
+        }
+    }
+    
+    
+    
+    .tasks {
+    margin-bottom: 20px;
+    
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            br {
+                display: initial;
+            }
+        }
+    }
+    
+    
+    .partners {
+    margin-bottom: 40px;
+    
+    h2 {
+        margin-bottom: 20px;
+        margin-left: calc((100vw - 359px) / 2);
+    }
+
+    &__item {
+        left: calc((100vw - 359px) / 2);
+    }
+    
+    }
+
+    .footer {
+        
+        padding: 50px 0 72px;
+
+        &__logo {
+            width: 48px;
+        }
+
+        &__text {
+            font-size: 13px;
+            line-height: 18px;
+        }
+        
+            
+        &__item--left {
+            margin-bottom: 54px;
+        }
+        &__bottom {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    
+        }
+
+        .projects-page {
+            &__header {
+                height: 210px;
+                padding-bottom: 100px;
+                .container {
+                   align-items: flex-end;
+                }
+            }
+            &__filters {
+                a {
+                    font-size: 15px;
+                    line-height: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            &__item {
+                margin-top: 30px;
+                &:nth-of-type(2) {
+                    margin-top: 30px;
+                }
+            }
+
+            &__image {
+                height: 318px;
+            }
+        }
+
+        .literature {
+        
+            &__header {
+                height: 210px;
+                
+padding-bottom: 0;
+                .container {
+                    align-items: center;
+                }
+                
+            }
+
+        &__select {
+            margin-bottom: 20px;
+            span,
+            select {
+                font-size: 13px;
+                line-height: 17px;
+            }
+            span {
+                display: none;
+            }
+
+        }
+        
+            &__item {
+                width: 100%;
+               
+        
+                margin-top: 20px;
+        
+                &:nth-of-type(1) {
+                    margin-top: 40px;
+                }
+                &:nth-of-type(2) {
+                    margin-top: 20px;
+                }
+            }
+            &__image {
+                height: 522px;
+            }
+        }
+
+        .events-page {
+
+    
+            &__header {
+                height: 210px;
+                margin-bottom: 40px;
+                padding-bottom: 50px;
+            }
+                    
+                        &__filters {
+                        
+
+                           display: none;
+
+                        }
+
+                        &__select {
+                            display: block;
+                            border: 0;
+                            outline: none;
+                           
+font-size: 15px;
+line-height: 19px;
+letter-spacing: 0em;
+color: $blue;
+margin-bottom: 40px;
+
+option {
+    color: #211917;
+    opacity: .5;
+}
+
+                        }
+                    
+                    &__button {
+                        font-size: 15px;
+                        line-height: 19px;
+                    }
+                    
+                    
+                        &__text {
+                          
+                            margin-bottom: 20px;
+                        }
+                    
+                    
+                    }
+    
+
+                    .contacts {
+    padding-bottom: 50px;
+                        
+                                    
+                                                &__name {
+                                                    font-size: 19px;
+                                                    line-height: 26px;
+                                                    margin-bottom: 18px;
+                        
+                                                    span {
+                                                        width: 100%;
+                                                        
+                                                    }
+                                                }
+                                                
+                                                    &__image {
+                                                        width: 100%;
+                                                        height: 374px;
+                        
+                                                        margin-bottom: 16px;
+                                                    }
+
+                                                    &__phone,
+                                                    &__email {
+                                                        a {
+                                                            font-size: 15px;
+                                                            line-height: 19px;
+                                                        }
+                                                        
+                                                    }
+                                                
+                                                    
+                                                    &__phone {
+                                                        margin-bottom: 24px;
+                                                    }
+                                                    
+                                                }
+
+
+
+                                                .post-page {
+                                                    padding-bottom: 30px;
+                                                
+                                                    
+                                                
+                                                    &__header {
+                                                        
+                                                        height: 210px;
+                                                        
+                                                    }
+                                                    &--template-1 {
+                                                        .post-page__header {
+                                                            height: 210px;
+                                                        }
+                                                    }
+                                                    &--template-2 {
+                                                        .post-page__header {
+                                                            height: 210px;
+                                                        }
+                                                    }
+                        
+                                                    .breadcrumbs {
+                                                        margin: 30px 0;
+                        
+                                                    }
+                                                
+                                                    &__title {
+                                                        
+                                                font-size: 20px;
+                                                line-height: 26px;
+                                                
+                                                margin-bottom: 10px;
+                                                
+                                                    }
+
+                                                    &__title-template {
+                                                        font-size: 30px;
+                                                line-height: 39px
+                                                    }
+                                                
+                                                
+                                                    &__date,
+                                                    &__location {
+                                                       
+                                                font-size: 15px;
+                                                line-height: 20px;
+                                                
+                                                
+                                                    }
+                                                    &__date {
+                                                        margin-bottom: 10px;
+                                                    }
+                        
+                                                    &__content,
+                                                    &__interview {
+                                                        margin-bottom: 30px;
+                                                        p {
+                                                            font-size: 15px;
+                                                            line-height: 23px;
+                                                        }
+                                                    }
+
+
+                                                    
+                        
+                                                    .flex--template-1,
+                                                    .flex-template-1 {
+                                                        
+                                                        margin: 30px;
+                        
+                                                        .breadcrumbs {
+                                                            margin-bottom: 30px;
+                                                        }
+                                                    }
+                                    
+                                                
+                                                    &__text-1 {
+                                                        width: 375px;
+                                                    }
+
+                                                    
+                                                    
+                                                    &__gallery-1-image {
+                                                        width: 100%;
+                                                        height: 325px;
+                                        
+                                                        span.year {
+                                                            
+                                                            bottom: 45px;
+                                                            right: 45px;
+                                                
+                                                            
+                                                
+                                                
+                                                        }
+                                                        
+                                                    }
+
+                                                    &--template-2 {
+                                                        .post-page__button {
+                                                            width: 100%!important;
+                                                            font-size: 17px;
+                                                            line-height: 23px;
+                                                            padding: 12px 0;
+
+                                                            &:nth-of-type(1) {
+                                                                margin-top: 30px;
+                                                                
+                                                            }
+                                                        }
+                                                    }
+                                                    &__year {
+                                                        font-size: 20px;
+                                                        line-height: 26px;
+                                                    }
+
+                                                    &__photo-gallery {
+                                                        margin-bottom: 30px;
+
+                                                        .swiper-nav {
+                                                            display: flex;
+                                                        }
+                                                        .swiper-wrapper {
+                                                            
+                                                            flex-wrap: nowrap;
+                                                        }
+                                                    }
+
+                                                    &__photo-gallery-items {
+                                                        
+                                                        height: 220px;
+                                                        overflow: hidden;
+                                                    }
+
+                                                    &__photo-gallery-item {
+                                                        width: 100%;
+                                                        height: 220px;
+                                                    }
+                                                &__photo-gallery-see-all {
+                                                    display: none!important;
+                                                }
+
+                                                    &__interview {
+                                                        .container {
+                                                            width: 100%;
+                                                        }
+
+                                                        h2 {
+                                                            width: 343px;
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                        }
+                                                    }
+
+                                                    &__video {
+                                                        .container {
+                                                            width: 100%;
+                                                        }
+
+                                                        h2 {
+                                                            width: 343px;
+                                                            margin-left: auto;
+                                                            margin-right: auto;
+                                                        }
+                                                    }
+
+                                                    &__video-see-all {
+                                                        display: block;
+                                                        width: 343px;
+                                                        margin-left: auto;
+                                                        margin-right: auto;
+                                                    }
+                                                
+                                                
+                                                }
+
+.form {
+    width: 370px;
+    padding: 80px 20px;
+}
+
+}
