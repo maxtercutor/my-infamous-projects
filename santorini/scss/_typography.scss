@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat_alternates_regular.eot"); /* IE 9 Compatibility Mode */
+	src: url("../fonts/montserrat_alternates_regular.eot?#iefix") format('embedded-opentype'), /* IE < 9 */
+		url("../fonts/montserrat_alternates_regular.woff2") format('woff2'), /* Super Modern Browsers */
+		url("../fonts/montserrat_alternates_regular.woff") format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url("../fonts/montserrat_alternates_regular.ttf") format('truetype'), /* Safari, Android, iOS */
+		url("../fonts/montserrat_alternates_regular.svg#montserrat_alternates_regular") format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/raleway_light.eot"); /* IE 9 Compatibility Mode */
+	src: url("../fonts/raleway_light.eot?#iefix") format('embedded-opentype'), /* IE < 9 */
+		url("../fonts/raleway_light.woff2") format('woff2'), /* Super Modern Browsers */
+		url("../fonts/raleway_light.woff") format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url("../fonts/raleway_light.ttf") format('truetype'), /* Safari, Android, iOS */
+        url("../fonts/raleway_light.svg#raleway_light") format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: "Sauvage";
+	src: url("../fonts/sauvage.eot"); /* IE 9 Compatibility Mode */
+	src: url("../fonts/sauvage.eot?#iefix") format('embedded-opentype'), /* IE < 9 */
+		url("../fonts/sauvage.woff2") format('woff2'), /* Super Modern Browsers */
+		url("../fonts/sauvage.woff") format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url("../fonts/sauvage.ttf") format('truetype'), /* Safari, Android, iOS */
+        url("../fonts/sauvage.svg#sauvage") format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/proxima_nova.eot"); /* IE 9 Compatibility Mode */
+	src: url("../fonts/proxima_nova.eot?#iefix") format('embedded-opentype'), /* IE < 9 */
+		url("../fonts/proxima_nova.woff2") format('woff2'), /* Super Modern Browsers */
+		url("../fonts/proxima_nova.woff") format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url("../fonts/proxima_nova.ttf") format('truetype'), /* Safari, Android, iOS */
+		url("../fonts/proxima_nova.svg#proxima") format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+html {
+    font-style: normal;
+	font-weight: 400;
+	font-weight: 400;
+	letter-spacing: 0em;
+}
+
+h1 {
+	font-family: "Sauvage";
+font-size: 22px;
+line-height: 15px;
+
+color: #000000;
+
+}
+
+h2 {
+font-family: "Sauvage";
+font-size: 22px;
+line-height: 15px;
+
+text-align: center;
+
+}
+
+
+.text {
+    font-family: "Raleway";
+font-size: 14px;
+line-height: 21px;
+
+
+
+}
+
+@media (max-width: 768px) {
+	h1,
+	h2 {
+		font-size: 18px;
+		line-height: 30px;
+	}
+ }

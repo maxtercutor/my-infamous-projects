@@ -1,0 +1,91 @@
+* {
+  transition: linear 1.0s;
+}
+
+#review_form_wrapper,
+.callback-form {
+  max-width: 400px;
+  padding: 40px 30px 60px;
+  border: 1px solid;
+}
+
+.comment-reply-title {
+  display: none;
+}
+
+.comment-form input:not([type="checkbox"]),
+.comment-form textarea,
+.callback-form input:not([type="checkbox"]),
+.callback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b4b4b4;
+  outline: none;
+}
+
+label[for="rating"] {
+  display: none;
+}
+
+label[for="comment"],
+label[for="author"],
+label[for="email"] {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.comment-form-rating,
+.comment-form-comment,
+.comment-form-author {
+  margin-bottom: 20px;
+}
+
+.comment-form-email {
+  margin-bottom: 10px;
+}
+
+.comment-form-cookies-consent {
+  margin-bottom: 50px;
+}
+
+.submit {
+  padding: 17px 0;
+  background-color: #4E99F1;
+  border: 1px solid #4E99F1;
+  font-family: "Comfortaa";
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.submit:hover {
+  background-color: #ffffff;
+  color: #4E99F1;
+  cursor: pointer;
+}
+
+.callback-form input[type="email"] {
+  margin-bottom: 10px;
+}
+
+.callback-form input[type="submit"] {
+  background-color: #4E99F1;
+  border: 1px solid #4E99F1;
+  font-family: "Comfortaa";
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.callback-form input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #4E99F1;
+  cursor: pointer;
+}
+/*# sourceMappingURL=coments.css.map */

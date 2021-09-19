@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR WEDDING CHECK IN LIST</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://use.fontawesome.com/c192ada680.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="header header--page">
+            <div class="container flex">
+                <nav class="header__menu header__menu--left header__menu--page">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">VENUES</a></li>
+                        <li><a href="#">PACKAGES</a></li>
+                        <li><a href="#">LEGAL</a></li>
+                    </ul>
+                </nav>
+                <div class="header__logo"><a href="#"><img src="./assets/images/front/logo-mini.svg" alt=""></a></div>
+                <nav class="header__menu header__menu--right header__menu--page">
+                    <ul>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CHECK IN</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                </div>
+            </div>
+            <nav class="header__mobile-menu">
+                <div class="header__mobile-menu-close"></div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">VENUES</a></li>
+                    <li><a href="#">PACKAGES</a></li>
+                    <li><a href="#">LEGAL</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">CHECK IN</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="#">HOME</a>&nbsp;/&nbsp;<a href="#">CHECK IN</a>&nbsp;/&nbsp;<span>WEDDING REGISTRATION</span>
+        </div>
+    </div>
+    <section class="check-in">
+        <div class="container">
+            <h1>YOUR WEDDING CHECK IN LIST</h1>
+            <p class="check-in__subtitle">Please be so kind to provide us with the detailed replies to the questions below! In case you are not sure or don't know yet the answer skip the question.</p>
+            <form action="#" class="check-in__form">
+                <h2>GENERAL INFORMATION</h2>
+                <div class="check-in__email flex">
+                    <div class="left">
+                        <input name="email" type="email" placeholder="Your Email *" required>
+                        <input name="phone" type="tel" placeholder="Your phone number *" required>
+                    </div>
+                    <div class="right flex">
+                        <span>Dates of stay on the Santorini island *</span>
+                        <input name="input1" type="text" required><input  name="input2"type="text" required>
+                    </div>
+                </div>
+                <h3>Information about the bride</h3>
+                <div class="check-in__bride flex">
+                    <div class="left flex">
+                        <span>Bride's Name *</span>
+                        <input name="input3" type="text" placeholder="First" required><input name="input4" type="text" placeholder="Last" required>
+                    </div>
+                    <div class="right">
+                        <input name="input5" type="text" placeholder="Nationality of Bride *" required>
+                    </div>
+                </div>
+                <h3>Information about the groom</h3>
+                <div class="check-in__groom flex">
+                    <div class="left flex">
+                        <span>Groom's Name *</span>
+                        <input name="input6" type="text" placeholder="First" required><input name="input7" type="text" placeholder="Last" required>
+                    </div>
+                    <div class="right">
+                        <input name="input8" type="text" placeholder="Nationality of Groom *" required>
+                    </div>
+                </div>
+                <h3>Wedding date</h3>
+                <div class="check-in__wedding flex">
+                    <div class="left flex">
+                        <span>Wedding date *</span>
+                        <input name="input9-1" type="number" placeholder="21" required><input name="input10" type="text" placeholder="November" required><input name="input11" type="number" placeholder="2021" required>
+                    </div>   
+                    <div class="right flex">
+                        <span>Wedding date *</span>
+                        <input name="input9-2" type="number" placeholder="21" required><input name="input10" type="text" placeholder="November" required><input name="input11" type="number" placeholder="2021" required>
+                    </div>
+                    <div class="bottom flex">
+                        <p>Time of Ceremony *</p>
+                        <input name="input12" type="text" placeholder="HH" required><span>:</span><input name="input13" type="text" placeholder="MM" required>
+                    </div>
+                </div>
+                <div class="check-in__additional">
+                    <h3>Additional Information</h3>
+                    <div class="check-in__textarea">
+                        <textarea name="textarea1" id="textarea2" cols="30" rows="10" placeholder="Please leave more comments here *" required></textarea>
+                    </div>
+                </div>
+                <div class="check-in__type flex">
+                    <div class="left flex">
+                        <span>Type of Wedding Ceremony *</span>
+                        <div class="radios flex">
+                            <label for="input14" class="single"><input name="typeof" id="input14" type="radio" required>Civil</label>
+                            <label for="input15" class="single"><input name="typeof" id="input15" type="radio" required>Church</label>
+                            <label for="input16" class="single"><input name="typeof" id="input16" type="radio" required>Symbolic</label>
+                            <label for="input17" class="single"><input name="typeof" id="input17" type="radio" required>Other</label>
+                        </div>
+                    </div>
+                    <div class="right flex">
+                        <span>Total guests attending (first estimation) *</span>
+                        <input name="input18" type="text" placeholder="150" required>
+                    </div>
+                </div>
+                <h2>LEGAL DOCUMENTATION</h2>
+                <div class="check-in__legal flex">
+                    <div class="left">
+                        <p><strong>Find here all appropriate documents for your wedding in Santorini</strong></p>
+                        <p>Planning the Civil Ceremony in Santorini requires the obtainment of the certain list of legal documents that vary from country to country. Every case is different and the authorities can demand extra papers from you! You should start collecting the listed documents 3 months prior your wedding.</p>
+                    </div>
+                    <div class="right">
+                        <a download href=""><img src="./assets/images/check-in/download.svg" alt=""></a>
+                    </div>
+                </div>
+                <h2>WEDDING VENUES IN SANTORINI</h2>
+                <div class="check-in__venues1 flex">
+                    <div class="left flex">
+                        <span>Ceremony venue Option #1</span>
+                        <select name="select1" id="select1">
+                            <option value="">Santorini</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="right flex">
+                        <span>Ceremony venue Option #2</span>
+                        <select name="select2" id="select2">
+                            <option value="">Santorini</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="check-in__venues2">
+                    <span>See the locations of the ceremonies</span>
+                    <a download href="#"><img src="./assets/images/check-in/download.svg" alt=""></a>
+                </div>
+                <div class="check-in__venues3 check-in__textarea">
+                    <textarea name="textarea2" id="textarea2" cols="30" rows="10" placeholder="Reception venue *" required></textarea>
+                </div>
+                <h2>CHURCHES FOR WEDDING IN SANTORINI</h2>
+                <div class="check-in__curches flex">
+                    <div class="left flex">
+                        <span>Church Option #1</span>
+                        <select name="select3" id="select3">
+                            <option value="">Santorini</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="right flex">
+                        <span>Church Option #2</span>
+                        <select name="select4" id="select4">
+                            <option value="">Santorini</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="bottom">
+                        <span>See CHURCHES FOR WEDDING IN SANTORINI</span>
+                        <a download href="#"><img src="./assets/images/check-in/download.svg" alt=""></a>
+                    </div>
+                </div>
+                <h2>HOTELS IN SANTORINI</h2>
+                <div class="check-in__hotels flex">
+                    <div class="left flex">
+                        <span>Place of stay on the island for couple</span>
+                        <select name="select5" id="select5">
+                            <option value="">Santorini</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="right flex">
+                        <span>Place of stay on the island for guests</span>
+                        <select name="select6" id="select6">
+                            <option value="">Santorini</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="bottom">
+                        <span>Check out hotels in Santorini</span>
+                        <a download href="#"><img src="./assets/images/check-in/download.svg" alt=""></a>
+                    </div>
+                </div>
+                <h2>WEDDING PACKAGES</h2>
+                <div class="check-in__packages flex">
+                    <header>
+                        <span>Would you like to choose ready package or to customize your wedding? *</span>
+                        <div class="radios">
+                            <label for="input19" class="single"><input id="input19" name="packages" type="radio">Wedding package</label>
+                            <label for="input20" class="single"><input id="input20" name="packages" type="radio">Wedding planning fee / customized wedding</label>
+                        </div>
+                    </header>
+                    <div class="left">
+                        <span>Your Wedding Package</span>
+                        <select name="select7" id="select7">
+                            <option value="">Santorini</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="right flex">
+                        <span>Wedding Package additional comments</span>
+                        <textarea name="textarea3" id="textarea3" cols="30" rows="10" placeholder="More details / comments about Wedding Package if any"></textarea>
+                    </div>
+                </div>
+                <div class="check-in__custom">
+                    <p>If you choosed Wedding planning fee / customized wedding, we will create your own customized offer, please send us your comments and wishes</p>
+                    <span>Customized Wedding</span>
+                    <input name="input21" type="text">
+                </div>
+                <h2>ACTIVITIES ON THE ISLAND SANTORINI</h2>
+                <div class="check-in__activites">
+                    <p><strong>More ideas how to spend your time in Santorini</strong></p>
+                    <p>Santorini is a beautiful island with a lot of opportunities to relax, enjoy and have an unforgettable time for you and your guests.</p>
+                    <div class="check-in__activites-radios flex">
+                        <div class="left">
+                            <label for="input22"><input name="input22" id="input22" type="radio">Boat tours - from private luxury to semiprivate - yachts, catamarans or sailing boats</label>
+                            <label for="input23"><input name="input23" id="input23" type="radio">Visit of Vlychada marina and Vlychada beach for the sand sculptures cultivated by wind and nature</label>
+                            <label for="input24"><input name="input24" id="input24" type="radio">Wine tasting</label>
+                            <label for="input25"><input name="input25" id="input25" type="radio">Gourmet restaurants dining</label>
+                            <label for="input26"><input name="input26" id="input26" type="radio">Thira night bars</label>
+                            <label for="input27"><input name="input27" id="input27" type="radio">Akrotiri excavations and Museum visit</label>
+                            <label for="input28"><input name="input28" id="input28" type="radio">Churches visit (Pelagos, Perissa hill)</label>
+                            <label for="input29"><input name="input29" id="input29" type="radio">Monastery visit</label>
+                            <label for="input30"><input name="input30" id="input30" type="radio">Port of Thira visit by cable cabin</label>
+                            <label for="input31"><input name="input31" id="input31" type="radio">Lighthouse visit in Akrotiri</label>
+                            <label for="input32"><input name="input32" id="input32" type="radio">Horse riding</label>
+                            <label for="input33"><input name="input33" id="input33" type="radio">Jumps from St.Nicolas isla church behind Amoudi bay</label>
+                            <label for="input34"><input name="input34" id="input34" type="radio">Diving</label>
+                            <label for="input35"><input name="input35" id="input35" type="radio">Stairs walk from Amoudi or Armeni bay - nice exercise instead of donkey ride !</label>
+                            <label for="input36"><input name="input36" id="input36" type="radio">Visiting opposite island Thirasia, Anafi or Ios (by boat trips)</label>
+                        </div>
+                        <div class="right">
+                            <label for="input37"><input name="input37" id="input37" type="radio">TraditionaL Boat rental</label>
+                            <label for="input38"><input name="input38" id="input38" type="radio">Helicopter sightseeing tours above the island</label>
+                            <label for="input39"><input name="input39" id="input39" type="radio">Local products tasting</label>
+                            <label for="input40"><input name="input40" id="input40" type="radio">Amoudi bay - traditional fish restaurants with sunset view</label>
+                            <label for="input41"><input name="input41" id="input41" type="radio">Sunset in Oia - stairs – castle area</label>
+                            <label for="input42"><input name="input42" id="input42" type="radio">Ancient Thira visit</label>
+                            <label for="input43"><input name="input43" id="input43" type="radio">Oia, Thira or Megalochori visit of old village</label>
+                            <label for="input44"><input name="input44" id="input44" type="radio">Perissa beach bars and sun bathing</label>
+                            <label for="input45"><input name="input45" id="input45" type="radio">Kite or wind surfing</label>
+                            <label for="input46"><input name="input46" id="input46" type="radio">SUP in the Caldera</label>
+                            <label for="input47"><input name="input47" id="input47" type="radio">Thira to Oia Caldera path walk</label>
+                            <label for="input48"><input name="input48" id="input48" type="radio">Shopping</label>
+                            <label for="input49"><input name="input49" id="input49" type="radio">Visiting Volcano (by boat trips) with the hot springs</label>
+                            <label for="input50"><input name="input50" id="input50" type="radio">Red beach and White beach (by boat trips)</label>
+                            <label for="input51"><input name="input51" id="input51" type="radio">SAWA rescue animal centre - donations or adoptions</label>
+                        </div>
+                    </div>
+                </div>
+                <footer class="check-in__footer">
+                    <img src="./assets/images/check-in/heart.svg" alt="">
+                    <p><strong>Thank you very much for all your answers</strong></p>
+                    <p>You've finished Check In!</p>
+                    <button type="submit" class="check-in__submit">SUBMIT</button>
+                </footer>
+            </form>
+        </div>
+    </section>
+    <div class="instagram">
+        <div class="container">
+            <div class="instagram__items flex">
+                <div class="instagram__big-image"><a href="#"><img src="./assets/images/front/inst-1.jpeg" alt=""></a><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></div>
+                <div class="instagram__images-column">
+                    <div class="instagram__images-row flex">
+                        <div class="instagram__image"><a href="#"><img src="./assets/images/front/inst-2.jpeg" alt=""></a></div>
+                        <div class="instagram__image"><a href="#"><img src="./assets/images/front/inst-3.jpeg" alt=""></a></div>
+                    </div>
+                    <div class="instagram__images-row flex">
+                        <div class="instagram__image"><a href="#"><img src="./assets/images/front/inst-4.jpeg" alt=""></a></div>
+                        <div class="instagram__image"><a href="#"><img src="./assets/images/front/inst-5.jpeg" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo"><a href="#"><img src="./assets/images/front/logo.svg" alt=""></a></div>
+            <nav class="footer__menu">
+                <ul class="flex">
+                    <li><a href="#">VENUES</a></li>
+                    <li><a href="#">PACKAGES</a></li>
+                    <li><a href="#">LEGAL</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">REVIEW</a></li>
+                    <li><a href="#">CHECK IN</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div class="footer__row flex">
+                <div class="footer__contact">
+                    <h3>Contact us</h3>
+                    <p><span>Address: </span>Karterados, Santorini, Greece 84700</p>
+                    <p><span>Phone: </span><a href="tel:0030-6972410546">0030 6972410546</a></p>
+                    <p><span>Phone: </spanLandline phone: ><a href="tel:+30-22860-25986">+30 22860 25986</a></p>
+                    <p><span>е-mail: </span><a href="mailto:marvellouswed@gmail.com">marvellouswed@gmail.com</a></p>
+                    <p><span>Contact person: </span>Maryna Gruzdyeva</p>
+                </div>
+                <div class="footer__awards">
+                    <h3>Awards</h3>
+                    <div class="footer__awards-images">
+                        <div class="footer__awards-image"><img src="./assets/images/front/icon-1.svg" alt=""></div>
+                        <div class="footer__awards-image"><img src="./assets/images/front/icon-2.svg" alt=""></div>
+                        <div class="footer__awards-image"><img src="./assets/images/front/icon-3.svg" alt=""></div>
+                        <div class="footer__awards-image"><img src="./assets/images/front/icon-4.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="footer__follow">
+                    <h3>Follow us on</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+            <div class="footer__copyright flex">
+                <p>© 2017 - 2020 All Rights Reserved.</p>
+                <p><a href="#">Terms and condition</a><a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var labels = document.querySelectorAll('label');
+        var inputs = document.querySelectorAll('input[type="radio"]');
+        var checked;
+
+        for(let i = 0; i < labels.length; i++) {
+            var label = labels[i];
+            var input = inputs[i];
+
+            input.addEventListener('click', () => {
+                if(labels[i].classList.contains('single')) {
+                    if(checked) checked.classList.remove('checked');
+                }
+
+                labels[i].classList.toggle('checked');
+                checked = labels[i];
+            });
+        }
+    </script>
+</body>
+</html>
